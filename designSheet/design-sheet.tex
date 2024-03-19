@@ -1,0 +1,98 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{booktabs}
+\usepackage{tabu}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+%\usepackage{apacite}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Software Engineering for Cyberphysical Devices: \\ Design Sheet}
+\author{Pex Jan-Mathijs, Thys Ferre and Vandenberk Seppe}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{System Requirements}
+
+The system needs to be capable of moving around an industrial facility to survey the area and measure various data elements. This means that the device should be able to move under user control as well as being directed to specific points within a room. The device doesn't require the ability to carry more than its own weight. Power for the device should come from the robot itself, necessitating a battery-operated solution without the need for cables. The company intends to control the robot through a web browser, meaning its operational range is constrained by network coverage.
+
+The industrial facility may feature multiple floor types, including the possibility of wet and dusty floors, as the robot's primary purpose is to detect errors. Although the rooms won't have stairs, the potential for ramps exists.
+
+Ultimately, the robot should be capable of performing inspection, repair, and maintenance tasks.
+
+\section*{Mechanical Design}
+
+\begin{itemize}
+\item Tracks are more versatile and stable then wheels. They also provide more traction across multiple floor types. Possible addition of weight won't be much of a problem, because of the weight distribution and the higher payload capacity compared to regular wheels. Finally, wheeled robots may have more maneuverbility in tight spaces, tracks can still navigate efficiently enough through industrial environments.
+\item The idea is to build a low profile bot, with a telescopic arm, so it fits better in to tight spaces.
+\end{itemize}
+
+\section*{Electrical Design}
+
+\begin{itemize}
+    \item 
+    \item The idea is to build a low profile bot, with a telescopic arm, so it fits better in to tight spaces.
+\end{itemize}
+
+\section*{Controller}
+3.	Control System:
+o	Describe the control architecture (centralized or distributed).
+o	Specify the type of controller (e.g., PLC, microcontroller, PC-based).
+o	Outline the communication protocols between components.
+
+\section*{Software Design}
+4.	Software:
+o	Python woooooo
+o	Specify the control algorithms for motion planning, collision avoidance, and task execution.
+1.	D* lite
+2.	Lidar with threshold for collision avoidance, bumper with pressure sensor as an extra safety measure in case the lidar mechanism fails.
+o	Include safety features and emergency stop procedures.
+
+\section*{Safety Systems}
+5.	Safety Systems:
+o	Outline safety measures and compliance with industry standards (e.g., ISO 10218, ISO 13849).
+1. Het safety ding van koentje
+o	Specify emergency stop mechanisms and protective barriers.
+1. BUMPER
+o	Include safety interlock systems and risk assessments.
+1. Risk assesment? Klsqdfmjqsdiof idk
+
+\section*{Human-Machine Interaction (HMI)}
+6.	Human-Machine Interface (HMI):
+o	Describe the user interface for programming, monitoring, and troubleshooting.
+1. Web interface, robot is keyboard controlled (with ps4 option ofc) , 		visible map on which to set goal points (points to navigate to)
+Also some other controls and sensor interface. Live video feed of 		camera via WebSockets 	
+
+o	Specify the level of automation and manual control options.
+2. Given a point on the map the bot should be able to in a safe and pid controlled way find its way to the point without extensive stopping, preferrably in one smooth motion
+o	Include error messages and diagnostics.
+
+\section*{Environmental Considerations}
+7.	Environmental Considerations:
+o	Address the operating temperature, humidity, and other environmental conditions.
+1. No such sensors but i \(walnoot\) suggest we fake them in the web interface 		because it looks coool as fuck 
+o	Consider ingress  protection (IP) ratings for protection against dust and water.
+\section*{Maintenance}
+o	Outline maintenance procedures, including lubrication and inspection schedules.
+o	Specify spare parts availability and ease of replacement.
+o	Include documentation for troubleshooting and repairs. 
+
+
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}
