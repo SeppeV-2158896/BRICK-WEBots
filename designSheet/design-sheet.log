@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.18)  22 MAR 2024 15:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.3.22)  22 MAR 2024 16:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/jan-m/Downloads/SECS/BRICK-WEBots/designSheet/design-sheet
-(c:/Users/jan-m/Downloads/SECS/BRICK-WEBots/designSheet/design-sheet.tex
+**c:/Users/ferre/brick/BRICK-WEBots/designSheet/design-sheet
+(c:/Users/ferre/brick/BRICK-WEBots/designSheet/design-sheet.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
 (c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -1080,15 +1080,15 @@ Package rerunfilecheck Info: File `design-sheet.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22681 strings out of 474103
- 416732 string characters out of 5747481
+ 22681 strings out of 474104
+ 416705 string characters out of 5747502
  1941496 words of memory out of 5000000
- 44658 multiletter control sequences out of 15000+600000
+ 44657 multiletter control sequences out of 15000+600000
  566428 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,101p,767b,598s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,6n,101p,758b,598s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on design-sheet.pdf (3 pages, 95046 bytes).
+Output written on design-sheet.pdf (3 pages, 96991 bytes).
 PDF statistics:
  64 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream

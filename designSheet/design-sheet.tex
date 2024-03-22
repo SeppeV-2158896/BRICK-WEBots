@@ -19,7 +19,7 @@
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 
 \title{Software Engineering for Cyberphysical Devices: \\ Design Sheet}
-\author{Pex Jan-Mathijs, Thys Ferre and Vandenberk Seppe}
+\author{Pex Jan-Mathijs, Theys Ferre and Vandenberk Seppe}
 \date{}
 
 \begin{document}
@@ -75,8 +75,19 @@ Ultimately, the robot should be capable of performing inspection, repair, and ma
     \item Interaction with the robot goes as mentioned via a webinterfac, which is written in html. The webinterface will be running an MQTT connection in the background to communicate with the robot itself and there will a websockets server build in to receive the live video feed the robot will be getting from the camera.
 \end{itemize}
 
+
+
 \section*{Safety Systems}
-Our robot will have safety systems, so when it bumps into objects or enters restricted areas the robot won't be allowed to move any further, and will require to drive back in the distance it came from to avoid more damage. This will also require a re-calculation of the path it needs to take. The addition of a emergency stop in the web-interface and a physical button on the robot, will allow human interference to stop the robot at any time.
+To make sure our robot stays safe and nothing bad happens several safety measures are put in place, these include:
+\begin{itemize}
+    \item \textbf{Killswitch}: To ensure that when our robot does make a mistake or something unexpected happens an emergency stop is present on the webinterface and on the robot itself that will disable any robot functions.
+    \item \textbf{Manual override}: This will give the users the possibility to stop all robot movement and take direct control of the movements remotely.
+    \item \textbf{PID control}: PID controllers will monitor how big the error is and will adapt the system so that the error becomes smaller.
+    \item \textbf{Touch sensors}: If other sensors fail and the robot hits a wall or an object a touch sensor can give feedback that the route it is currently following is not possible so the robot can make adjustments.
+    \item \textbf{Continuous map updates}: If while driving an object appears on the lidar and gets added to the map the route will be periodically recalculated to ensure no collisions happen.
+    \item \textbf{Latency monitoring}: Ping will be displayed on the webinterface.
+\end{itemize}
+
 
 \section*{Human-Machine Interaction (HMI)}
 6.	Human-Machine Interface (HMI):
@@ -98,10 +109,8 @@ Weather conditions don't significantly impact the operational efficiency and lon
 Power considerations are fundamental in determining the autonomy and dependability of the robot. Because of the intended use the robot should be able to function on a battery and will be able to charge itself in the facility. Most of todays industrial facility are not to big to drive around in one singular battery charge, so this is also an assumption we take for this project.
 
 \section*{Maintenance}
-o	Outline maintenance procedures, including lubrication and inspection schedules.
-o	Specify spare parts availability and ease of replacement.
-o	Include documentation for troubleshooting and repairs. 
-
+Our robot utilises a webinterface and thus is not bound to any specific software or operating systems. Because of this updates and maintenance on the software can simply be performed by opening the webinterface and editing the necessary code.
+Updates to our code or design will happen on github where users can pull the most recent version to remain up to date.
 
 
 \bibliographystyle{plain}
