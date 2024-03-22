@@ -65,12 +65,15 @@ Ultimately, the robot should be capable of performing inspection, repair, and ma
 \end{itemize}
 
 \section*{Software Design}
-4.	Software:
-o	Python woooooo
-o	Specify the control algorithms for motion planning, collision avoidance, and task execution.
-1.	D* lite
-2.	Lidar with threshold for collision avoidance, bumper with pressure sensor as an extra safety measure in case the lidar mechanism fails.
-o	Include safety features and emergency stop procedures.
+\begin{itemize}
+    \item Python will be used to program the robot, it is integrated in webots and is there for one of the easiest methods to program in webots.
+    \item For the robot autonomous drive we are going to use the D* lite algorithm. D* lite is a modified version of A* that saves the previous paths and uses them for future pathfinding. It's light to run on less sofisticated hardware. It has also proven itself in many occations that it is one of the best pathfinding algorithms for autonomous robots.
+    \item D* lite will run based on a map of the environment the robot will make with its lidar sensor. For making the map of the environment, there will be a manual run through of the environment where multiple photos will be taken. To create the complete map, the photos will be stiched together. Stitching will be done by running a feature detection scan and matching the different detected features between multiple images. After the features are matched we can calculate the transformation between multiple images, doing this for multiple images where the same keypoint is matched multiple times we can create an 2D representation of the environment hence creating our map.
+    \item A waypoint system will be added to improve the user efficiency. Most waypoints will be located at important locations, such as its charger of measuring interfaces. 
+    \item In the event the D* lite algorithm fails to safely pathfind the robot to its destination there will be the pressure sensor that triggers a piece of code that retraces the last step the robot took and goes back. After the robot is back in its previous known good position the D* lite algorithm will run a second time to recalculate its path to set destination.
+    \item There will also be basic safety functionality. A stop and emergency stop will be implemented to stop or even exit the code so the robot stops running.
+    \item Interaction with the robot goes as mentioned via a webinterfac, which is written in html. The webinterface will be running an MQTT connection in the background to communicate with the robot itself and there will a websockets server build in to receive the live video feed the robot will be getting from the camera.
+\end{itemize}
 
 \section*{Safety Systems}
 Our robot will have safety systems, so when it bumps into objects or enters restricted areas the robot won't be allowed to move any further, and will require to drive back in the distance it came from to avoid more damage. This will also require a re-calculation of the path it needs to take. The addition of a emergency stop in the web-interface and a physical button on the robot, will allow human interference to stop the robot at any time.
