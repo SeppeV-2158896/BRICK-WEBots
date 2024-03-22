@@ -36,8 +36,8 @@ Ultimately, the robot should be capable of performing inspection, repair, and ma
 \section*{Mechanical Design}
 
 \begin{itemize}
-\item Tracks are more versatile and stable then wheels. They also provide more traction across multiple floor types. Possible addition of weight won't be much of a problem, because of the weight distribution and the higher payload capacity compared to regular wheels. Finally, wheeled robots may have more maneuverbility in tight spaces, tracks can still navigate efficiently enough through industrial environments.
-\item The idea is to build a low profile bot, with a telescopic arm, so it fits better in to tight spaces.
+\item Tracks are more versatile and stable then wheels. They also provide more traction across multiple floor types. Possible addition of weight won't be much of a problem, because of the weight distribution and the higher payload capacity compared to regular wheels. Finally, wheeled robots may have more maneuverbility in tight spaces, tracks can still navigate efficiently enough through industrial environments. 
+\item The idea is to build a low profile bot, with a telescopic arm, so it fits better in to tight spaces. The use of a skid plate will prevent the spraying water from entering the system.
 \end{itemize}
 
 \section*{Electrical Design}
@@ -86,10 +86,13 @@ o	Specify the level of automation and manual control options.
 o	Include error messages and diagnostics.
 
 \section*{Environmental Considerations}
-7.	Environmental Considerations:
-o	Address the operating temperature, humidity, and other environmental conditions.
-1. No such sensors but i \(walnoot\) suggest we fake them in the web interface 		because it looks coool as fuck 
-o	Consider ingress  protection (IP) ratings for protection against dust and water.
+To develop a good simulation of the system, it is crucial to asses the environmental factors that could influence the efficiency and durability of the robot. These factors encompass a range of elements, including terrain, weather conditions, power requirements, and sustainability considerations.
+
+When it comes to terrain, it is essential to make some assumptions about the surrounding of the robot. Whether it will be navigating indoor spaces with smooth surfaces or outdoor terrains with rough surfaces and obstacles, the selection of mobility mechanisms like wheels or tracks becomes vital. For this design, the robot will be limited to an area that is covered by a wireless network. So the robot will be designed for indoor use, but the floors can be wet and dusty due to it being an industrial facility and the main task of the robot to surveil and detect any problems.
+
+Weather conditions don't significantly impact the operational efficiency and longevity of the robot. Because of its indoor use. Therefore, there will be no direct action taken to prevent wheather damage to the robot. The robot we design will be splash proof, to prevent spraying water from the tracks from entering the system. Since it is an indoor industrial facility, the assumption is made that the temperature will not exceed the working temperatures of the equiment
+
+Power considerations are fundamental in determining the autonomy and dependability of the robot. Because of the intended use the robot should be able to function on a battery and will be able to charge itself in the facility. Most of todays industrial facility are not to big to drive around in one singular battery charge, so this is also an assumption we take for this project.
 
 \section*{Maintenance}
 o	Outline maintenance procedures, including lubrication and inspection schedules.
