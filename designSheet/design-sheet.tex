@@ -51,7 +51,7 @@ Ultimately, the robot should be capable of performing inspection, repair, and ma
         \item \textbf{Inertial Measurement Unit (IMU)}: Provides data on orientation, acceleration, and angular velocity for navigation and motion control.
         \item \textbf{Camera(s)}: Enables visual perception and object recognition for tasks such as navigation and object manipulation.
         \item \textbf{Environmental Sensors}: Measure parameters such as temperature, humidity, and atmospheric pressure for environmental monitoring and adaptation.
-        \item \textbf{Safety Sensors}: A safety sensure, such as a touch sensor can prevent the robot from doing unwanted behavior. 
+        \item \textbf{Safety Sensors}: A safety sensor, such as a touch sensor can prevent the robot from doing unwanted behavior. 
     \end{itemize}
     
     \item \textbf{Actuators}: 
@@ -68,7 +68,8 @@ Ultimately, the robot should be capable of performing inspection, repair, and ma
 \begin{itemize}
     \item Python will be used to program the robot, it is integrated in webots and is there for one of the easiest methods to program in webots.
     \item For the robot autonomous drive we are going to use the D* lite algorithm. D* lite is a modified version of A* that saves the previous paths and uses them for future pathfinding. It's light to run on less sofisticated hardware. It has also proven itself in many occations that it is one of the best pathfinding algorithms for autonomous robots.
-    \item D* lite will run based on a map of the environment the robot will make with its lidar sensor. For making the map of the environment, there will be a manual run through of the environment where multiple photos will be taken. To create the complete map, the photos will be stiched together. Stitching will be done by running a feature detection scan and matching the different detected features between multiple images. After the features are matched we can calculate the transformation between multiple images, doing this for multiple images where the same keypoint is matched multiple times we can create an 2D representation of the environment hence creating our map.
+    \item D* lite will run based on a map of the environment the robot 
+    will make with its lidar sensor. The data the lidar returns is used to make a point cloud in which surface reconstruction algorithms can be used to make straight walls to complete the 2D environment map.
     \item A waypoint system will be added to improve the user efficiency. Most waypoints will be located at important locations, such as its charger of measuring interfaces. 
     \item In the event the D* lite algorithm fails to safely pathfind the robot to its destination there will be the pressure sensor that triggers a piece of code that retraces the last step the robot took and goes back. After the robot is back in its previous known good position the D* lite algorithm will run a second time to recalculate its path to set destination.
     \item There will also be basic safety functionality. A stop and emergency stop will be implemented to stop or even exit the code so the robot stops running.
@@ -90,14 +91,7 @@ To make sure our robot stays safe and nothing bad happens several safety measure
 
 
 \section*{Human-Machine Interaction (HMI)}
-6.	Human-Machine Interface (HMI):
-o	Describe the user interface for programming, monitoring, and troubleshooting.
-1. Web interface, robot is keyboard controlled (with ps4 option ofc) , 		visible map on which to set goal points (points to navigate to)
-Also some other controls and sensor interface. Live video feed of 		camera via WebSockets 	
-
-o	Specify the level of automation and manual control options.
-2. Given a point on the map the bot should be able to in a safe and pid controlled way find its way to the point without extensive stopping, preferrably in one smooth motion
-o	Include error messages and diagnostics.
+The robot is controlled with a webinterface. The webinterface will contain 4 control buttons to move the robot manually, the buttons will also be mapped to keys on the keyboard of the used machine. The user can pick the method they want to control the robot. User input for move commands will be send to our robot with MQTT.  There will also be a live video feet that is directly streamed from the robot camera to the webinterface. The video streaming will be setup with websockets. And at last there will some kind of method to start the autonomous drive on the robot with some kind of button to start te process. There will also be a stop and emergency stop button build in the website so the user can stop the running code in an event of a failure.
 
 \section*{Environmental Assumptions}
 To develop a good simulation of the system, it is crucial to asses the environmental factors that could influence the efficiency and durability of the robot. These factors encompass a range of elements, including terrain, weather conditions, power requirements, and sustainability considerations.
