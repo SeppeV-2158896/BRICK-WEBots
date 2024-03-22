@@ -43,15 +43,26 @@ Ultimately, the robot should be capable of performing inspection, repair, and ma
 \section*{Electrical Design}
 
 \begin{itemize}
-    \item 
-    \item The idea is to build a low profile bot, with a telescopic arm, so it fits better in to tight spaces.
+    \item \textbf{Raspberry Pi}: The Raspberry Pi serves as the brain of the robot, controlling its behavior and components. It processes sensor data, executes algorithms, and sends data over the cloud to our interfacing software.
+    
+    \item \textbf{Sensors}: Our robot is equipped with an array of sensors for perception and environmental awareness. These sensors include:
+    \begin{itemize}
+        \item \textbf{Distance Awareness}: Our system will use a Lidar sensor for distance perception. This in combination with a GPS sensor, can help determine the robots location.
+        \item \textbf{Inertial Measurement Unit (IMU)}: Provides data on orientation, acceleration, and angular velocity for navigation and motion control.
+        \item \textbf{Camera(s)}: Enables visual perception and object recognition for tasks such as navigation and object manipulation.
+        \item \textbf{Environmental Sensors}: Measure parameters such as temperature, humidity, and atmospheric pressure for environmental monitoring and adaptation.
+        \item \textbf{Safety Sensors}: A safety sensure, such as a touch sensor can prevent the robot from doing unwanted behavior. 
+    \end{itemize}
+    
+    \item \textbf{Actuators}: 
+    \begin{itemize}
+        \item \textbf{DC Motors}: Used for driving mechanisms.
+        \item \textbf{Servo Motors}: Provide precise control over angular position for tasks such as camera orientation.
+    \end{itemize}
+    
+    \item \textbf{Power Supply}: The power supply system based on batteries, provides electrical energy to the robot's components. It includes voltage regulators and power distribution circuits to ensure stable and reliable operation.
+    
 \end{itemize}
-
-\section*{Controller}
-3.	Control System:
-o	Describe the control architecture (centralized or distributed).
-o	Specify the type of controller (e.g., PLC, microcontroller, PC-based).
-o	Outline the communication protocols between components.
 
 \section*{Software Design}
 4.	Software:
@@ -62,13 +73,7 @@ o	Specify the control algorithms for motion planning, collision avoidance, and t
 o	Include safety features and emergency stop procedures.
 
 \section*{Safety Systems}
-5.	Safety Systems:
-o	Outline safety measures and compliance with industry standards (e.g., ISO 10218, ISO 13849).
-1. Het safety ding van koentje
-o	Specify emergency stop mechanisms and protective barriers.
-1. BUMPER
-o	Include safety interlock systems and risk assessments.
-1. Risk assesment? Klsqdfmjqsdiof idk
+Our robot will have safety systems, so when it bumps into objects or enters restricted areas the robot won't be allowed to move any further, and will require to drive back in the distance it came from to avoid more damage. This will also require a re-calculation of the path it needs to take. The addition of a emergency stop in the web-interface and a physical button on the robot, will allow human interference to stop the robot at any time.
 
 \section*{Human-Machine Interaction (HMI)}
 6.	Human-Machine Interface (HMI):
@@ -85,6 +90,7 @@ o	Include error messages and diagnostics.
 o	Address the operating temperature, humidity, and other environmental conditions.
 1. No such sensors but i \(walnoot\) suggest we fake them in the web interface 		because it looks coool as fuck 
 o	Consider ingress  protection (IP) ratings for protection against dust and water.
+
 \section*{Maintenance}
 o	Outline maintenance procedures, including lubrication and inspection schedules.
 o	Specify spare parts availability and ease of replacement.
