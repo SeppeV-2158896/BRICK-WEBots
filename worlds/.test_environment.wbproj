@@ -7,4 +7,4 @@ centralWidgetVisible: 1
 orthographicViewHeight: 1
 textFiles: 0 "controllers/robot_controller/robot_controller.py" "protos/BRICK.proto"
 consoles: Console:All:All
-renderingDevicePerspectives: BRICKV1:Webcam;1;0.365625;0.408367;0.164157
+renderingDevicePerspectives: BRICKV1:Webcam;1;0.535417;0;0

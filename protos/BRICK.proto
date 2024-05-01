@@ -422,8 +422,7 @@ PROTO BRICK [
 
         ]
       }
-      DEF LIDAR SickLms291 {
-        // https://webots.cloud/run?version=R2023b&url=https%3A%2F%2Fgithub.com%2Fcyberbotics%2Fwebots%2Fblob%2Freleased%2Fprojects%2Fdevices%2Fsick%2Fprotos%2FSickLms291.proto
+      DEF LIDAR SickLms291 { 
         translation 0.0 0.1 0.11
         rotation 0 0 1 1.57
         name "lidar"
@@ -431,7 +430,6 @@ PROTO BRICK [
         resolution 180
       }
       Robotino3Webcam {
-        // https://webots.cloud/run?version=R2023b&url=https%3A%2F%2Fgithub.com%2Fcyberbotics%2Fwebots%2Fblob%2Freleased%2Fprojects%2Frobots%2Ffesto%2Frobotino3%2Fprotos%2FRobotino3Webcam.proto
         translation  0 0 -0.05
         rotation     0 0 1 3.14
         name         "Webcam"
@@ -440,7 +438,6 @@ PROTO BRICK [
         height       480
       }
       Mpu-9250 {
-        // https://webots.cloud/run?version=R2023b&url=https%3A%2F%2Fgithub.com%2Fcyberbotics%2Fwebots%2Fblob%2Freleased%2Fprojects%2Fdevices%2Ftdk%2Fprotos%2FMpu-9250.proto
         translation   0 -0.1 0.05
         rotation      0 0 1 0
         name          "MPU-9250"
