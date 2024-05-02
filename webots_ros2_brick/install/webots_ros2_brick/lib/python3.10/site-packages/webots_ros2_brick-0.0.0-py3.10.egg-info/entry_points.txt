@@ -1,0 +1,3 @@
+[console_scripts]
+my_robot_driver = webots_ros2_brick.Brick_driver:main
+

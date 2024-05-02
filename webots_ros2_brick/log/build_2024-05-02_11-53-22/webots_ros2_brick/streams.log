@@ -1,0 +1,17 @@
+[0.577s] Invoking command in '/home/ferre/webots_ros2_brick': PYTHONPATH=/home/ferre/webots_ros2_brick/build/webots_ros2_brick/prefix_override:/home/ferre/webots_ros2_brick/install/webots_ros2_brick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/webots_ros2_brick build --build-base /home/ferre/webots_ros2_brick/build/webots_ros2_brick/build install --record /home/ferre/webots_ros2_brick/build/webots_ros2_brick/install.log --single-version-externally-managed install_data
+[0.789s] running egg_info
+[0.789s] writing build/webots_ros2_brick/webots_ros2_brick.egg-info/PKG-INFO
+[0.790s] writing dependency_links to build/webots_ros2_brick/webots_ros2_brick.egg-info/dependency_links.txt
+[0.790s] writing entry points to build/webots_ros2_brick/webots_ros2_brick.egg-info/entry_points.txt
+[0.790s] writing requirements to build/webots_ros2_brick/webots_ros2_brick.egg-info/requires.txt
+[0.790s] writing top-level names to build/webots_ros2_brick/webots_ros2_brick.egg-info/top_level.txt
+[0.791s] reading manifest file 'build/webots_ros2_brick/webots_ros2_brick.egg-info/SOURCES.txt'
+[0.792s] adding license file 'LICENSE'
+[0.792s] writing manifest file 'build/webots_ros2_brick/webots_ros2_brick.egg-info/SOURCES.txt'
+[0.792s] running build
+[0.792s] running build_py
+[0.793s] running install
+[0.793s] running install_lib
+[0.794s] running install_data
+[0.794s] error: can't copy 'metal.jpg': doesn't exist or not a regular file
+[0.820s] Invoked command in '/home/ferre/webots_ros2_brick' returned '1': PYTHONPATH=/home/ferre/webots_ros2_brick/build/webots_ros2_brick/prefix_override:/home/ferre/webots_ros2_brick/install/webots_ros2_brick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/webots_ros2_brick build --build-base /home/ferre/webots_ros2_brick/build/webots_ros2_brick/build install --record /home/ferre/webots_ros2_brick/build/webots_ros2_brick/install.log --single-version-externally-managed install_data
