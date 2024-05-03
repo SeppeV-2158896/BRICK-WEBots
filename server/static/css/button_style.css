@@ -1,0 +1,32 @@
+:root {
+    --arrow-button-size: 75px;
+    --arrow-button-margin: 5px;
+}
+
+.arrow-button {
+    width: var(--arrow-button-size);
+    height: var(--arrow-button-size);
+    margin: var(--arrow-button-margin);
+    cursor: pointer;
+    font-size: calc(var(--arrow-button-size) / 1.5);
+}
+
+.arrow-button.invisible {
+    visibility: hidden;
+}
+
+.emergency-stop-button {
+    width: calc(2 * var(--arrow-button-size) + 2 * var(--arrow-button-margin));
+    height: calc(2 * var(--arrow-button-size) + 2 * var(--arrow-button-margin));
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+    font-size: calc(var(--arrow-button-size) / 3.75);
+    cursor: pointer;
+    margin-left: auto;
+    align-self: flex-start;
+    position: absolute;
+    top: 70px;
+    left: calc(3 * var(--arrow-button-size) + 2 * 3 * var(--arrow-button-margin) + 10px); /* hier kunnen we nog mee spelen, voorlopig zo */
+}
