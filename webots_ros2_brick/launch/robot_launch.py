@@ -21,10 +21,21 @@ def generate_launch_description():
             {'robot_description': robot_description_path},
         ]
     )
+    """slave_node = Node(
+        package='webots_ros2_brick',
+        executable='slave',
+    )
 
+    odom_publisher_node = Node(
+        package='webots_ros2_brick',
+        executable='odom_publisher',
+    )"""
+    
     return LaunchDescription([
         webots,
         my_robot_driver,
+        #slave_node,
+        #odom_publisher_node,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,

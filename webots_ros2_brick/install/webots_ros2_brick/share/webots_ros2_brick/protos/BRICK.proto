@@ -13,7 +13,6 @@ PROTO BRICK [
   field SFRotation  rotation        0 0 1 0        
   field SFString    name            "BRICKV1"      
   field SFFloat     bodyMass        1
-  field SFString   controller      "<extern>"
   field MFString   controllerArgs  []             
 ]
 {
@@ -41,11 +40,18 @@ PROTO BRICK [
           Track {
             translation 0.3 0 0
             rotation 0 0 1 1.5708
-            device [LinearMotor {
+            device [
+              LinearMotor {
               name     "left_motor"                                                                                                # any string
               maxForce 10                                                                                                            # [0, inf]
               sound    "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/default/worlds/sounds/linear_motor.wav" # any string
-            }]
+              } 
+              PositionSensor {
+                name   "pos_left"
+                noise       0 
+                resolution -1  
+              }
+            ]
             textureAnimation 0 0
             animatedGeometry Shape {
               appearance Appearance {
@@ -133,11 +139,18 @@ PROTO BRICK [
           Track {
             translation -0.3 0 0
             rotation 0 0 1 1.5708
-            device [LinearMotor {
+            device [
+              LinearMotor {
               name     "right_motor"                                                                                                # any string
               maxForce 10                                                                                                            # [0, inf)
               sound    "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/default/worlds/sounds/linear_motor.wav" # any string
-            }]
+              }
+              PositionSensor {
+                name   "pos_right"
+                noise       0 
+                resolution -1  
+              }
+            ]
             textureAnimation 0 0
             animatedGeometry Shape {
               appearance Appearance {
@@ -448,7 +461,7 @@ PROTO BRICK [
       density -1
       mass IS bodyMass
     }
-    controller IS controller
+    controller "<extern>"
     controllerArgs IS controllerArgs
   }
 }

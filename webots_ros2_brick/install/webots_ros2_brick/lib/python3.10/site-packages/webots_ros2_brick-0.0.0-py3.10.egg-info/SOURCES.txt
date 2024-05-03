@@ -7,7 +7,6 @@ texture.jpg
 build/webots_ros2_brick/webots_ros2_brick.egg-info/PKG-INFO
 build/webots_ros2_brick/webots_ros2_brick.egg-info/SOURCES.txt
 build/webots_ros2_brick/webots_ros2_brick.egg-info/dependency_links.txt
-build/webots_ros2_brick/webots_ros2_brick.egg-info/entry_points.txt
 build/webots_ros2_brick/webots_ros2_brick.egg-info/requires.txt
 build/webots_ros2_brick/webots_ros2_brick.egg-info/top_level.txt
 build/webots_ros2_brick/webots_ros2_brick.egg-info/zip-safe
@@ -16,10 +15,9 @@ protos/BRICK.proto
 protos/Hoap2.proto
 resource/brick.urdf
 resource/webots_ros2_brick
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
-webots_ros2_brick/Brick_driver.py
 webots_ros2_brick/__init__.py
-webots_ros2_brick/obstacle_avoider.py
+webots_ros2_brick/costmap_2d.py
+webots_ros2_brick/odom_publisher.py
+webots_ros2_brick/robotcontroller.py
+webots_ros2_brick/slave.py
 worlds/test_environment.wbt
