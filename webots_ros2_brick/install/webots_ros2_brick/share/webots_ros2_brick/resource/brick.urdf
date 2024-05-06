@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <robot name="BRICKV1">
     <webots>
-        <plugin type="webots_ros2_brick.Brick_driver.MyRobotDriver" />
+        <plugin type="webots_ros2_brick.robotcontroller.MyRobotDriver" />
     </webots>
 </robot>

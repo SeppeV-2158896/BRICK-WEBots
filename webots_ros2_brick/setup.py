@@ -23,10 +23,10 @@ setup(
     maintainer_email='user.name@mail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
-    tests_require=['pytest'],
-    entry_points={
-        'console_scripts': [
-            'my_robot_driver = webots_ros2_brick.Brick_driver:main'
-        ],
-    },
+    tests_require=['pytest']
 )
+"""entry_points={
+        'console_scripts': [
+            'odom_publisher = webots_ros2_brick.master:main',
+        ],
+    },"""
