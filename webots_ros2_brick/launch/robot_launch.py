@@ -41,12 +41,12 @@ def generate_launch_description():
         ]
     )
 
-    control_node = Node(
+    """control_node = Node(
         package="controller_manager",
         executable="ros2_control_node",
         parameters=[robot_controllers],
         output="both",
-    )
+    )"""
     """nav2_launch = launch.actions.ExecuteProcess(
             cmd=['ros2', 'launch', 'nav2_bringup', 'navigation_launch.py'],
             output='screen',
@@ -65,12 +65,12 @@ def generate_launch_description():
     
   
     return LaunchDescription([
+        #rviz,
         webots,
         my_robot_driver,
-        control_node,
-        rviz,
+        #control_node,
         #nav2_launch,
-        slam_toolbox_launch,
+        #slam_toolbox_launch,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,
