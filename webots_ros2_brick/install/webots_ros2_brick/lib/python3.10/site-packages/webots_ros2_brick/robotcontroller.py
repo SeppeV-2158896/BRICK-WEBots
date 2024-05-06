@@ -97,7 +97,7 @@ class MyRobotDriver():
         self.publish_odom()
 
     def publish_odom(self):
-        ####DC = (Dl + Dr)/2
+        """####DC = (Dl + Dr)/2
         ####x' = x + Dc*cos(th)
         ####y' = y + Dc*sin(th)
         ####th' = th + (Dr-Dl)/L
@@ -170,7 +170,7 @@ class MyRobotDriver():
         odom.twist.twist.angular.z=self.vth
 
         # publish the message
-        self.odom_pub.publish(odom)
+        self.odom_pub.publish(odom)"""
     
     def goal_callback(self,msg):
         x = msg.translation.x
@@ -194,7 +194,7 @@ class MyRobotDriver():
 
 
     def cmdVel_callback(self, msg):
-        self.vx = msg.linear.x
+       """ self.vx = msg.linear.x
         self.vth = msg.angular.z
         
         self.node.get_logger().info("initvelocity" + " " + str(msg.linear) + " " + str(msg.angular))
@@ -210,7 +210,7 @@ class MyRobotDriver():
         self.right_omega = right_speed / (self.wheel_radius)
 
         self.left_motor.setVelocity(left_speed)
-        self.right_motor.setVelocity(right_speed)
+        self.right_motor.setVelocity(right_speed)"""
 
     def laser_pub(self):
         try:

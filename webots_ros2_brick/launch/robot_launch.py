@@ -75,6 +75,6 @@ def generate_launch_description():
                 on_exit=[launch.actions.EmitEvent(event=launch.events.Shutdown())],
             )
         ),
-        navigation_node#,
+        #navigation_node#,
         #mqtt_node
     ])
