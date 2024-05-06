@@ -1,49 +1,126 @@
-// Functie om verbinding te maken met de broker
-function connectMQTT() {
-    var hostname = 'test.mosquitto.org';
-    var port = 8080;
-    var clientId = 'clientID - 19';
+const client = new Paho.MQTT.Client('2a144db8513740369fedfc9de40e179b.s1.eu.hivemq.cloud', Number(8884), "/mqtt", 'client-id:' + Math.random().toString(16).substr(2, 8));
 
-    // Initialisatie van de MQTT-client
-    client = new Paho.MQTT.Client(hostname, port, clientId);
+client.onConnectionLost = onConnectionLost;
+client.onMessageArrived = onMessageArrived;
 
-    console.log(client)
+client.connect({
+    onSuccess: onConnect, 
+    userName : "TestUser",
+    password : "t3stT3ST",
+    useSSL: true
+});
 
-    // Set de verbindingsopties
-    client.onConnectionLost = onConnectionLost;
-    client.onMessageArrived = onMessageArrived;
-
-    // Verbind de client
-    client.connect({
-        onSuccess: onConnect,
-        onFailure: function(errorMessage) {
-            console.log('Connection failed: ' + errorMessage.errorMessage);
+function subscribeOnTopic(topic){
+    client.subscribe(topic, {
+        onSuccess: function() {
+            console.log('Subscription to topic', topic, 'successful');
+        },
+        onFailure: function(err) {
+            console.error('Failed to subscribe to topic', topic, ':', err.errorMessage);
         }
     });
 }
 
-// Functie om de verbinding te verbreken
-function disconnect() {
-    if (client) {
-        client.disconnect();
-    }
-}
-
-// Callback functie voor het behandelen van de verbinding
 function onConnect() {
-    console.log('Connected');
-    // Voeg hier eventueel extra logica toe voor na de verbinding
+    console.log('Connected to MQTT broker');
+
+    setup()
 }
 
-// Callback functie voor het behandelen van verbindingsverlies
 function onConnectionLost(responseObject) {
     if (responseObject.errorCode !== 0) {
-        console.log('Connection lost: ' + responseObject.errorMessage);
+        console.log('Connection lost:', responseObject.errorMessage);
     }
 }
 
-// Callback functie voor het ontvangen van berichten
 function onMessageArrived(message) {
-    console.log('Message arrived: ' + message.payloadString);
-    // Voeg hier eventueel extra logica toe voor het verwerken van ontvangen berichten
+    // console.log('Message received:', message.payloadString);
+}
+
+function sendData(data, topic) {
+    var message = new Paho.MQTT.Message(data);
+    message.qos = 2;
+    message.destinationName = topic;
+    client.send(message);
+
+    // console.log("message send: " + message.toString());
+}
+
+function setup() {
+    subscribeOnTopic("movement");
+    subscribeOnTopic("emergencyStop");
+
+    setEventListenersArrowButtons('up');
+    setEventListenersArrowButtons('left');
+    setEventListenersArrowButtons('down');
+    setEventListenersArrowButtons('right');
+
+    setEventListenersEmergencyStopButton();
+
+    setKeyboardEventListener()
+}
+
+function setEventListenersArrowButtons(direction) {
+    var arrowButton = document.getElementById('arrow-' + direction);
+
+    // Mouse actions
+    arrowButton.addEventListener('mousedown', function() {
+        sendData('arrow-' + direction + '-keydown', 'movement');
+    });
+
+    arrowButton.addEventListener('mouseup', function() {
+        sendData('arrow-' + direction + '-keyup', 'movement');
+    });
+}
+
+function setEventListenersEmergencyStopButton() {
+    var emergencyStopButton = document.getElementById('emergency-stop');
+
+    emergencyStopButton.addEventListener('click', function(){
+        sendData("stop", "emergencyStop");
+    });
+}
+
+function setKeyboardEventListener() {
+    // Keyboard actions
+    document.addEventListener('keydown', function(event) {
+        if(!event.repeat){
+            if(event.key === 'z'){
+                sendData('arrow-up-keydown', 'movement');
+            }
+            else if(event.key === 'q') {
+                sendData('arrow-left-keydown', 'movement');
+            }
+            else if(event.key === 's') {
+                sendData('arrow-down-keydown', 'movement');
+            }
+            else if(event.key === 'd') {
+                sendData('arrow-right-keydown', 'movement');
+            }
+        }
+    });
+
+    document.addEventListener('keyup', function(event) {
+        if(event.key === 'z'){
+            sendData('arrow-up-keyup', 'movement');
+        }
+        else if(event.key === 'q') {
+            sendData('arrow-left-keyup', 'movement');
+        }
+        else if(event.key === 's') {
+            sendData('arrow-down-keyup', 'movement');
+        }
+        else if(event.key === 'd') {
+            sendData('arrow-right-keyup', 'movement');
+        }
+        else if(event.key === 'Escape'){
+            sendData('stop', 'emergencyStop');
+        }
+    });
+
+    // document.addEventListener('keypress', function(event){
+    //     if(event.key === 'del') {
+    //         sendData('stop', 'emergencyStop');
+    //     }
+    // });
 }

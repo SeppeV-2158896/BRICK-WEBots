@@ -9,8 +9,8 @@
     <link type="text/css" rel="stylesheet" href='../static/css/style.css' />
     <link type="text/css" rel="stylesheet" href='../static/css/button_style.css' />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.1.0/paho-mqtt.min.js" type="text/javascript"></script>
-    <script src="../static/js/mqttClientPaho.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
+    <script src="../static/js/mqttClientPaho.js"></script>
   </head>
 
   <body>
@@ -22,16 +22,16 @@
       <!-- ARROW BUTTONS -->
       <div>
         <button class="arrow-button invisible">&#8592;</button>
-        <button class="arrow-button">&#8593;</button>
+        <button id="arrow-up" class="arrow-button">&#8593;</button>
       </div>
       <div>
-        <button class="arrow-button">&#8592;</button>
-        <button class="arrow-button">&#8595;</button>
-        <button class="arrow-button">&#8594;</button>
+        <button id="arrow-left" class="arrow-button">&#8592;</button>
+        <button id="arrow-down" class="arrow-button">&#8595;</button>
+        <button id="arrow-right" class="arrow-button">&#8594;</button>
       </div>
 
       <!-- EMERGENCY STOP BUTTON -->
-      <button class="emergency-stop-button">EMGERGENCY STOP</button>
+      <button id="emergency-stop" class="emergency-stop-button">EMGERGENCY STOP</button>
 
       <div class="connect-container">
         <div class="grid-item"><p>Connect to:</p></div>
@@ -55,9 +55,6 @@
     <div class="webots-view-container">
       <webots-view></webots-view>
     </div>
-
-    <!-- <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
-    <script src="../static/js/mqttClient.js"></script> -->
 
     <!-- <script type="module" src="https://cyberbotics.com/wwi/R2023b/WebotsView.js"></script>
     <script src="../static/js/setup_viewer.js"></script> -->
