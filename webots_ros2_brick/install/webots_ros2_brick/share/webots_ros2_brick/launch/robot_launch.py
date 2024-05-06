@@ -5,14 +5,15 @@ from launch import LaunchDescription
 from ament_index_python.packages import get_package_share_directory
 from webots_ros2_driver.webots_launcher import WebotsLauncher
 from webots_ros2_driver.webots_controller import WebotsController
-
+from launch.substitutions import Command, FindExecutable, PathJoinSubstitution, LaunchConfiguration
+from launch_ros.substitutions import FindPackageShare
 
 def generate_launch_description():
     package_dir = get_package_share_directory('webots_ros2_brick')
     robot_description_path = os.path.join(package_dir, 'resource', 'brick.urdf')
 
     webots = WebotsLauncher(
-        world=os.path.join(package_dir, 'worlds', 'test_environment.wbt')
+        world=os.path.join(package_dir, 'worlds', 'turtlebot3_burger_example.wbt')
     )
     
     my_robot_driver = WebotsController(
@@ -21,25 +22,59 @@ def generate_launch_description():
             {'robot_description': robot_description_path},
         ]
     )
-    """slave_node = Node(
+
+    mqtt_node = Node(
         package='webots_ros2_brick',
-        executable='slave',
+        executable='mqtt_handler',
     )
 
-    odom_publisher_node = Node(
+    navigation_node = Node(
         package='webots_ros2_brick',
-        executable='odom_publisher',
+        executable='navigator',
+    )
+
+    robot_controllers = PathJoinSubstitution(
+        [
+            FindPackageShare("webots_ros2_brick"),
+            "config",
+            "test_diff_drive_controller.yaml",
+        ]
+    )
+
+    control_node = Node(
+        package="controller_manager",
+        executable="ros2_control_node",
+        parameters=[robot_controllers],
+        output="both",
+    )
+    """nav2_launch = launch.actions.ExecuteProcess(
+            cmd=['ros2', 'launch', 'nav2_bringup', 'navigation_launch.py'],
+            output='screen',
+        )
+
+    slam_toolbox_launch = launch.actions.ExecuteProcess(
+        cmd=['ros2', 'launch', 'slam_toolbox', 'online_async_launch.py'],
+        output='screen',
+    )"""
+
+    """rviz2_launch = launch.actions.ExecuteProcess(
+        cmd=['ros2', 'run', 'rviz2', 'rviz2', '-d', '/opt/ros/iron/share/nav2_bringup/rviz/nav2_default_view.rviz'],
+        output='screen',
     )"""
     
+  
     return LaunchDescription([
         webots,
         my_robot_driver,
-        #slave_node,
-        #odom_publisher_node,
+        control_node,
+        #nav2_launch,
+        #slam_toolbox_launch,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,
                 on_exit=[launch.actions.EmitEvent(event=launch.events.Shutdown())],
             )
-        )
+        ),
+        navigation_node#,
+        #mqtt_node
     ])

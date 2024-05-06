@@ -5,6 +5,7 @@ data_files = []
 data_files.append(('share/ament_index/resource_index/packages', ['resource/' + package_name]))
 data_files.append(('share/' + package_name + '/launch', ['launch/robot_launch.py']))
 data_files.append(('share/' + package_name + '/worlds', ['worlds/test_environment.wbt']))
+data_files.append(('share/' + package_name + '/worlds', ['worlds/turtlebot3_burger_example.wbt']))
 data_files.append(('share/' + package_name + '/resource', ['resource/brick.urdf']))
 data_files.append(('share/' + package_name, ['package.xml']))
 data_files.append(('share/' + package_name + '/protos', ['protos/BRICK.proto']))
@@ -23,10 +24,11 @@ setup(
     maintainer_email='user.name@mail.com',
     description='TODO: Package description',
     license='TODO: License declaration',
-    tests_require=['pytest']
-)
-"""entry_points={
+    tests_require=['pytest'],
+    entry_points={
         'console_scripts': [
-            'odom_publisher = webots_ros2_brick.master:main',
+            'navigator = webots_ros2_brick.navigation:main',
+            'mqtt_handler = webots_ros2_brick.mqtt_receiver:main',
         ],
-    },"""
+    }
+)

@@ -1,0 +1,4 @@
+[console_scripts]
+mqtt_handler = webots_ros2_brick.mqtt_receiver:main
+navigator = webots_ros2_brick.navigation:main
+
