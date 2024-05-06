@@ -50,25 +50,27 @@ def generate_launch_description():
     """nav2_launch = launch.actions.ExecuteProcess(
             cmd=['ros2', 'launch', 'nav2_bringup', 'navigation_launch.py'],
             output='screen',
-        )
+        )"""
 
     slam_toolbox_launch = launch.actions.ExecuteProcess(
         cmd=['ros2', 'launch', 'slam_toolbox', 'online_async_launch.py'],
         output='screen',
-    )"""
+    )
 
-    """rviz2_launch = launch.actions.ExecuteProcess(
-        cmd=['ros2', 'run', 'rviz2', 'rviz2', '-d', '/opt/ros/iron/share/nav2_bringup/rviz/nav2_default_view.rviz'],
-        output='screen',
-    )"""
+    rviz = Node(
+        package="rviz2",
+        executable="rviz2",
+        arguments=["-d", os.path.join(package_dir, "rviz", "slam_rviz.rviz")]
+    )
     
   
     return LaunchDescription([
         webots,
         my_robot_driver,
         control_node,
+        rviz,
         #nav2_launch,
-        #slam_toolbox_launch,
+        slam_toolbox_launch,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,

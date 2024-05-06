@@ -1,0 +1,18 @@
+[0.594s] Invoking command in '/home/ferre/brick/BRICK-WEBots/webots_ros2_brick': PYTHONPATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/build/webots_ros2_brick/prefix_override:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/webots_ros2_brick build --build-base /home/ferre/brick/BRICK-WEBots/webots_ros2_brick/build/webots_ros2_brick/build install --record /home/ferre/brick/BRICK-WEBots/webots_ros2_brick/build/webots_ros2_brick/install.log --single-version-externally-managed install_data
+[0.812s] running egg_info
+[0.812s] writing build/webots_ros2_brick/webots_ros2_brick.egg-info/PKG-INFO
+[0.813s] writing dependency_links to build/webots_ros2_brick/webots_ros2_brick.egg-info/dependency_links.txt
+[0.813s] writing entry points to build/webots_ros2_brick/webots_ros2_brick.egg-info/entry_points.txt
+[0.813s] writing requirements to build/webots_ros2_brick/webots_ros2_brick.egg-info/requires.txt
+[0.813s] writing top-level names to build/webots_ros2_brick/webots_ros2_brick.egg-info/top_level.txt
+[0.816s] reading manifest file 'build/webots_ros2_brick/webots_ros2_brick.egg-info/SOURCES.txt'
+[0.816s] adding license file 'LICENSE'
+[0.817s] writing manifest file 'build/webots_ros2_brick/webots_ros2_brick.egg-info/SOURCES.txt'
+[0.817s] running build
+[0.817s] running build_py
+[0.818s] running install
+[0.818s] running install_lib
+[0.819s] running install_data
+[0.820s] copying launch/robot_launch.py -> /home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick/share/webots_ros2_brick/launch
+[0.820s] error: can't copy 'resource/brick.urdf': doesn't exist or not a regular file
+[0.845s] Invoked command in '/home/ferre/brick/BRICK-WEBots/webots_ros2_brick' returned '1': PYTHONPATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/build/webots_ros2_brick/prefix_override:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/webots_ros2_brick build --build-base /home/ferre/brick/BRICK-WEBots/webots_ros2_brick/build/webots_ros2_brick/build install --record /home/ferre/brick/BRICK-WEBots/webots_ros2_brick/build/webots_ros2_brick/install.log --single-version-externally-managed install_data
