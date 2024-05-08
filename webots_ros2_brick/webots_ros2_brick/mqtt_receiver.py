@@ -17,6 +17,13 @@ class mqtt_receiver(Node):
             'u':(1,0,0,1)
         }
 
+        self.movement = {
+            "forward": False,
+            "backward": False,
+            "left": False,
+            "right": False
+        }
+
         broker_address = "2a144db8513740369fedfc9de40e179b.s1.eu.hivemq.cloud"
         port = 8883
         username = "BRICK"
@@ -54,6 +61,41 @@ class mqtt_receiver(Node):
         self.get_logger().info("Received message: " + msg.payload.decode())
         data = msg.payload.decode()
         # TODO set movement with twist method
+        data_split = data.split("_")
+        direction = data_split[0]
+        key_action = data_split[1]
+
+        if key_action == "up":
+            self.movement[direction] = False
+        elif key_action == "down":
+            self.movement[direction] = True
+
+        self.calculateMovement()
+
+    def calculateMovement(self):
+        forward = self.movement["forward"]
+        backward = self.movement["backward"]
+        left = self.movement["left"]
+        right = self.movement["right"]
+
+        lin = 0
+        if forward == backward:
+            pass
+        elif forward:
+            lin = 1
+        elif backward:
+            lin = -1
+
+        rot = 0
+        if left == right:
+            pass
+        elif left:
+            rot = 1
+        elif right:
+            rot = -1
+
+        movement = (lin, 0, 0, rot)
+        
 
     def __del__(self):
         self.get_logger().info("stopping mqtt")
