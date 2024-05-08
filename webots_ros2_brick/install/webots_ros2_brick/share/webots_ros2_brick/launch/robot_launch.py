@@ -68,6 +68,7 @@ def generate_launch_description():
         #rviz,
         webots,
         my_robot_driver,
+        mqtt_node,
         #control_node,
         #nav2_launch,
         #slam_toolbox_launch,
@@ -78,5 +79,4 @@ def generate_launch_description():
             )
         ),
         #navigation_node#,
-        #mqtt_node
     ])
