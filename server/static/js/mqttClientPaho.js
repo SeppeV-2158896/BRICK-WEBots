@@ -43,16 +43,16 @@ function sendData(data, topic) {
     message.destinationName = topic;
     client.send(message);
 
-    // console.log("message send: " + message.toString());
+    console.log("message send: " + message.toString());
 }
 
 function setup() {
     subscribeOnTopic("movement");
     subscribeOnTopic("emergencyStop");
 
-    setEventListenersArrowButtons('up');
+    setEventListenersArrowButtons('forward');
     setEventListenersArrowButtons('left');
-    setEventListenersArrowButtons('down');
+    setEventListenersArrowButtons('backward');
     setEventListenersArrowButtons('right');
 
     setEventListenersEmergencyStopButton();
@@ -65,11 +65,11 @@ function setEventListenersArrowButtons(direction) {
 
     // Mouse actions
     arrowButton.addEventListener('mousedown', function() {
-        sendData('arrow-' + direction + '-keydown', 'movement');
+        sendData(direction + '-down', 'movement');
     });
 
     arrowButton.addEventListener('mouseup', function() {
-        sendData('arrow-' + direction + '-keyup', 'movement');
+        sendData(direction + '-up', 'movement');
     });
 }
 
