@@ -29,6 +29,7 @@ setup(
         'console_scripts': [
             'navigator = webots_ros2_brick.navigation:main',
             'mqtt_handler = webots_ros2_brick.mqtt_receiver:main',
+            'mqtt_videostream = webots_ros2_brick.mqtt_videostream:main',
         ],
     }
 )

@@ -55,6 +55,8 @@ class MyRobotDriver():
             Twist, '/cmd_vel', self.cmdVel_callback, 1)
         self.goal_subscriber = self.node.create_subscription(
             Vector3, '/goal', self.goal_callback,1)
+        # self.emergency_stop = self.node.create_subscription(
+        #    bool, '/emergency_stop', self.emergencyStop_callback, 1)
         
         # Create Lidar subscriber
         self.lidar_sensor = self.robot.getDevice('lidar')
@@ -208,6 +210,10 @@ class MyRobotDriver():
 
         self.left_motor.setVelocity(left_speed)
         self.right_motor.setVelocity(right_speed)
+
+    def emergencyStop_callback(self, msg):
+        self.node.destroy_node()
+        rclpy.shutdown()
 
     def laser_pub(self):
         try:

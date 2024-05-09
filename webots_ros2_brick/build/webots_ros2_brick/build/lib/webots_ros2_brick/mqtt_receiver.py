@@ -9,12 +9,14 @@ class mqtt_receiver(Node):
     def __init__(self):
         super().__init__('mqtt_receiver_node')
 
-        self.moveBindings = {
-            'i':(1,0,0,0),
-            'o':(1,0,0,-1),
-            'j':(0,0,0,1),
-            'l':(0,0,0,-1),
-            'u':(1,0,0,1)
+        self.cmd_vel_pub = self.create_publisher(Twist,"cmd_vel",1)
+        # self.emergency_stop_pub = self.create_publisher(bool, "emergency_stop",1)
+
+        self.movement = {
+            "forward": False,
+            "backward": False,
+            "left": False,
+            "right": False
         }
 
         broker_address = "2a144db8513740369fedfc9de40e179b.s1.eu.hivemq.cloud"
@@ -40,7 +42,6 @@ class mqtt_receiver(Node):
         self.client.loop_start()
 
     def on_connect(self, client, userdata, flags, rc, properties):
-        self.get_logger().info("on_connect is called")
         self.get_logger().info("Connected to MQTT broker")
 
         self.client.subscribe("movement")
@@ -52,7 +53,63 @@ class mqtt_receiver(Node):
         self.get_logger().info("Failed to connect to MQTT broker")
 
     def on_message(self, client, userdata, msg):
-        self.get_logger().info("Received message")
+        self.get_logger().info("Received message: " + msg.payload.decode())
+        topic = msg.topic
+        data = msg.payload.decode()
+        # TODO set movement with twist method
+        if topic == "movement":
+            data_split = data.split("_")
+            direction = data_split[0]
+            key_action = data_split[1]
+
+            if key_action == "up":
+                self.movement[direction] = False
+            elif key_action == "down":
+                self.movement[direction] = True
+
+            twist = self.calculateMovement()
+            self.cmd_vel_pub.publish(twist)
+        elif topic == "emergencyStop":
+            # TODO implement emergency stop
+            # self.emergency_stop_pub.publish(True)
+            self.get_logger().info("Stop not yet implemented")
+            pass
+
+    def calculateMovement(self):
+        forward = self.movement["forward"]
+        backward = self.movement["backward"]
+        left = self.movement["left"]
+        right = self.movement["right"]
+
+        lin = 0
+        if forward == backward:
+            pass
+        elif forward:
+            lin = 1
+        elif backward:
+            lin = -1
+
+        rot = 0
+        if left == right:
+            pass
+        elif left:
+            rot = 1
+        elif right:
+            rot = -1
+
+        speed = 0.75
+        turn = 0.1
+
+        twist = Twist()
+        twist.linear.x = float(lin * speed)
+        twist.angular.z = float(rot * turn)
+
+        twist.linear.y = 0.
+        twist.linear.z = 0.
+        twist.angular.x = 0.
+        twist.angular.y = 0.
+
+        return twist
 
     def __del__(self):
         self.get_logger().info("stopping mqtt")

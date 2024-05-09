@@ -9,13 +9,8 @@ class mqtt_receiver(Node):
     def __init__(self):
         super().__init__('mqtt_receiver_node')
 
-        self.moveBindings = {
-            'i':(1,0,0,0),
-            'o':(1,0,0,-1),
-            'j':(0,0,0,1),
-            'l':(0,0,0,-1),
-            'u':(1,0,0,1)
-        }
+        self.cmd_vel_pub = self.create_publisher(Twist,"cmd_vel",1)
+        # self.emergency_stop_pub = self.create_publisher(bool, "emergency_stop",1)
 
         self.movement = {
             "forward": False,
@@ -59,18 +54,26 @@ class mqtt_receiver(Node):
 
     def on_message(self, client, userdata, msg):
         self.get_logger().info("Received message: " + msg.payload.decode())
+        topic = msg.topic
         data = msg.payload.decode()
         # TODO set movement with twist method
-        data_split = data.split("_")
-        direction = data_split[0]
-        key_action = data_split[1]
+        if topic == "movement":
+            data_split = data.split("_")
+            direction = data_split[0]
+            key_action = data_split[1]
 
-        if key_action == "up":
-            self.movement[direction] = False
-        elif key_action == "down":
-            self.movement[direction] = True
+            if key_action == "up":
+                self.movement[direction] = False
+            elif key_action == "down":
+                self.movement[direction] = True
 
-        self.calculateMovement()
+            twist = self.calculateMovement()
+            self.cmd_vel_pub.publish(twist)
+        elif topic == "emergencyStop":
+            # TODO implement emergency stop
+            # self.emergency_stop_pub.publish(True)
+            self.get_logger().info("Stop not yet implemented")
+            pass
 
     def calculateMovement(self):
         forward = self.movement["forward"]
@@ -94,8 +97,19 @@ class mqtt_receiver(Node):
         elif right:
             rot = -1
 
-        movement = (lin, 0, 0, rot)
-        
+        speed = 0.75
+        turn = 0.1
+
+        twist = Twist()
+        twist.linear.x = float(lin * speed)
+        twist.angular.z = float(rot * turn)
+
+        twist.linear.y = 0.
+        twist.linear.z = 0.
+        twist.angular.x = 0.
+        twist.angular.y = 0.
+
+        return twist
 
     def __del__(self):
         self.get_logger().info("stopping mqtt")
