@@ -53,8 +53,7 @@ class MyRobotDriver():
         # Create Subscriber
         self.cmd_vel_subscriber = self.node.create_subscription(
             Twist, '/cmd_vel', self.cmdVel_callback, 1)
-        self.goal_subscriber = self.node.create_subscription(
-            Vector3, '/goal', self.goal_callback,1)
+        
         
         # Create Lidar subscriber
         self.lidar_sensor = self.robot.getDevice('lidar')
@@ -80,7 +79,7 @@ class MyRobotDriver():
         
         #########################
         
-        self.prev_angle = (22/7)/2
+        self.prev_angle = 0
         self.prev_left_wheel_ticks = 0.0
         self.prev_right_wheel_ticks = 0.0
         self.last_time = 0.0
@@ -120,8 +119,8 @@ class MyRobotDriver():
         omega = (v_right-v_left) / self.wheel_gap
 
 
-        self.x += v * sin(self.prev_angle)*time_diff_s
-        self.y += v * cos(self.prev_angle)*time_diff_s
+        self.x += v * cos(self.prev_angle)*time_diff_s
+        self.y += v * sin(self.prev_angle)*time_diff_s
         self.th += omega*time_diff_s
 
 
@@ -147,7 +146,7 @@ class MyRobotDriver():
         odom_transform.transform.rotation.y = odomq[1]
         odom_transform.transform.rotation.z = odomq[2]
         odom_transform.transform.rotation.w = odomq[3]
-        odom_transform.transform.translation.x = -self.x
+        odom_transform.transform.translation.x = self.x
         odom_transform.transform.translation.y = self.y
         odom_transform.transform.translation.z = 0.0
         #self.node.get_logger().info(str(odom_quat) + " en dan ook nog " + str(odom_transform))
@@ -158,48 +157,57 @@ class MyRobotDriver():
         odom.header.frame_id = "odom"
         odom.child_frame_id = "base_link"
         # set the position
-        odom.pose.pose.position.x= 0.0
-        odom.pose.pose.position.y= 0.0
-        odom.pose.pose.orientation.x=0.0
-        odom.pose.pose.orientation.y=0.0
-        odom.pose.pose.orientation.z=0.0
-        odom.pose.pose.orientation.w= 0.0
+        odom.pose.pose.position.x=self.x
+        odom.pose.pose.position.y=self.y
+        odom.pose.pose.orientation.x=odomq[0]
+        odom.pose.pose.orientation.y=odomq[1]
+        odom.pose.pose.orientation.z=odomq[2]
+        odom.pose.pose.orientation.w=odomq[3]
         # set the velocity
-        odom.twist.twist.linear.x = 0.0
-        odom.twist.twist.angular.z= 0.0
+        odom.twist.twist.linear.x =self.vx
+        odom.twist.twist.angular.z=self.vth
 
         # publish the message
         self.odom_pub.publish(odom)
-    
-    def goal_callback(self,msg):
-        x = msg.translation.x
-        y = msg.translatyion.y
-        goal_pose = (x,y)
-        path = self.nav.getPath((self.x,self.y), goal_pose)
-        smoothed_path = self.nav.smoothPath(path)
-        self.nav.goToPose(goal_pose)
-        while not self.nav.isTaskComplete():
-            feedback = self.nav.getFeedback()
-            if feedback.navigation_duration > 600:
-                self.nav.cancelTask()
 
-        result = self.nav.getResult()
-        if result == TaskResult.SUCCEEDED:
-            print('Goal succeeded!')
-        elif result == TaskResult.CANCELED:
-            print('Goal was canceled!')
-        elif result == TaskResult.FAILED:
-            print('Goal failed!')
+        """odom = Odometry()
+        odom.header.stamp = stamp
+        odom.header.frame_id = "odom"
+        odom.child_frame_id = "base_link"
+        # set the position 0.0
+        odom.pose.pose.position.x=0.0
+        odom.pose.pose.position.y=0.0
+        odom.pose.pose.orientation.x=0.0
+        odom.pose.pose.orientation.y=0.0
+        odom.pose.pose.orientation.z=0.0
+        odom.pose.pose.orientation.w=0.0
+        # set the velocity
+        odom.twist.twist.linear.x =0.0
+        odom.twist.twist.angular.z=0.0
+
+        # publish the message
+        self.odom_pub.publish(odom)"""
+ 
 
 
     def cmdVel_callback(self, msg):
         self.vx = msg.linear.x
-        self.vth = msg.angular.z
-        
-        
+        self.vth = -msg.angular.z
+        #msg.angular.z = - msg.angular.z
+        #self.node.get_logger().info("speeds"  + str(msg.linear.x) + " " + str(msg.angular.z))
+        if msg.angular.z > 0.2:
+            left_speed = msg.linear.x + (2* 0.2)/self.wheel_gap
+            right_speed = msg.linear.x - (2* 0.2)/self.wheel_gap
+        elif msg.angular.z < -0.2:
+            left_speed = msg.linear.x + (2* -0.2)/self.wheel_gap
+            right_speed = msg.linear.x - (2* -0.2)/self.wheel_gap
+        else:
+            left_speed = msg.linear.x + (2* msg.angular.z)/self.wheel_gap
+            right_speed = msg.linear.x - (2* msg.angular.z)/self.wheel_gap
         #self.node.get_logger().info("initvelocity" + " " + str(msg.linear) + " " + str(msg.angular))
-        left_speed = msg.linear.x + (2* msg.angular.z)/self.wheel_gap
-        right_speed = msg.linear.x - (2* msg.angular.z)/self.wheel_gap
+
+        
+        
         left_speed = min(self.motor_max_speed,
                          max(-self.motor_max_speed, left_speed))
         right_speed = min(self.motor_max_speed,
@@ -216,8 +224,8 @@ class MyRobotDriver():
             stamp = Time(seconds=self.robot.getTime()).to_msg()
             #self.node.get_logger().info(str(stamp))
             msg_lidar.header.stamp = stamp
-            msg_lidar.angle_min = 0.0
-            msg_lidar.angle_max = 22 / 7
+            msg_lidar.angle_min = -(22/7)/2
+            msg_lidar.angle_max = (22 / 7)/2
             msg_lidar.angle_increment = ( 22 / 7  ) / (179)
             msg_lidar.range_min = 0.12
             msg_lidar.range_max = 25.0

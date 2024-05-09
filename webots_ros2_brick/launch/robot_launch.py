@@ -67,6 +67,8 @@ def generate_launch_description():
     return LaunchDescription([
         #rviz,
         webots,
+        mqtt_node,
+        #navigation_node,
         my_robot_driver,
         #control_node,
         #nav2_launch,

@@ -10,18 +10,18 @@ class navigation(Node):
         self.nav = BasicNavigator()
         initPose = PoseStamped()
         initPose.header.frame_id = "map"
-        initPose.stamp = self.nav.get_clock().now().to_msg()
+        initPose.header.stamp = self.nav.get_clock().now().to_msg()
         initPose.pose.position.x = 0.0
         initPose.pose.position.y = 0.0
         initPose.pose.orientation.z = 1.0
         initPose.pose.orientation.w = 0.0
         
         self.nav.setInitialPose(initPose)
-        self.nav.waitUntilNav2Active()
+        self.nav.waitUntilNav2Active(localizer="bt_navigator")
 
 
 
-        """"i = 0
+        """i = 0
         while not self.nav.isTaskComplete():
             i = i + 1
         feedback = self.nav.getFeedback()
@@ -54,8 +54,8 @@ class navigation(Node):
         else:
             print('Goal has an invalid return status!')
 
-        self.nav.lifecycleShutdown()"""
-
+        self.nav.lifecycleShutdown()
+"""
 
 
 
