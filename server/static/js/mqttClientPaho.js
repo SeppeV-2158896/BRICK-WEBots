@@ -34,7 +34,13 @@ function onConnectionLost(responseObject) {
 }
 
 function onMessageArrived(message) {
-    // console.log('Message received:', message.payloadString);
+    // console.log("Message received: " + message.destinationName)
+    if (message.destinationName == "videostream"){
+        var imageBase64 = message.payloadString;
+        var imageElement = document.getElementById('cameraView');
+        imageElement.src = "data:image/jpeg;charset=utf-8;base64," + imageBase64;
+        // console.log(imageElement.src)
+    }
 }
 
 function sendData(data, topic) {
@@ -43,16 +49,17 @@ function sendData(data, topic) {
     message.destinationName = topic;
     client.send(message);
 
-    // console.log("message send: " + message.toString());
+    console.log("message send: " + message.toString());
 }
 
 function setup() {
     subscribeOnTopic("movement");
     subscribeOnTopic("emergencyStop");
+    subscribeOnTopic("videostream")
 
-    setEventListenersArrowButtons('up');
+    setEventListenersArrowButtons('forward');
     setEventListenersArrowButtons('left');
-    setEventListenersArrowButtons('down');
+    setEventListenersArrowButtons('backward');
     setEventListenersArrowButtons('right');
 
     setEventListenersEmergencyStopButton();
@@ -65,11 +72,11 @@ function setEventListenersArrowButtons(direction) {
 
     // Mouse actions
     arrowButton.addEventListener('mousedown', function() {
-        sendData('arrow-' + direction + '-keydown', 'movement');
+        sendData(direction + '_down', 'movement');
     });
 
     arrowButton.addEventListener('mouseup', function() {
-        sendData('arrow-' + direction + '-keyup', 'movement');
+        sendData(direction + '_up', 'movement');
     });
 }
 
@@ -86,32 +93,32 @@ function setKeyboardEventListener() {
     document.addEventListener('keydown', function(event) {
         if(!event.repeat){
             if(event.key === 'z'){
-                sendData('arrow-up-keydown', 'movement');
+                sendData('forward_down', 'movement');
             }
             else if(event.key === 'q') {
-                sendData('arrow-left-keydown', 'movement');
+                sendData('left_down', 'movement');
             }
             else if(event.key === 's') {
-                sendData('arrow-down-keydown', 'movement');
+                sendData('backward_down', 'movement');
             }
             else if(event.key === 'd') {
-                sendData('arrow-right-keydown', 'movement');
+                sendData('right_down', 'movement');
             }
         }
     });
 
     document.addEventListener('keyup', function(event) {
         if(event.key === 'z'){
-            sendData('arrow-up-keyup', 'movement');
+            sendData('forward_up', 'movement');
         }
         else if(event.key === 'q') {
-            sendData('arrow-left-keyup', 'movement');
+            sendData('left_up', 'movement');
         }
         else if(event.key === 's') {
-            sendData('arrow-down-keyup', 'movement');
+            sendData('backward_up', 'movement');
         }
         else if(event.key === 'd') {
-            sendData('arrow-right-keyup', 'movement');
+            sendData('right_up', 'movement');
         }
         else if(event.key === 'Escape'){
             sendData('stop', 'emergencyStop');
