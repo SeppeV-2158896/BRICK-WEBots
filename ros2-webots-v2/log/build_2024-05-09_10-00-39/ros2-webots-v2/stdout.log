@@ -1,0 +1,29 @@
+running egg_info
+creating build/ros2-webots-v2/ros2_webots_v2.egg-info
+writing build/ros2-webots-v2/ros2_webots_v2.egg-info/PKG-INFO
+writing dependency_links to build/ros2-webots-v2/ros2_webots_v2.egg-info/dependency_links.txt
+writing entry points to build/ros2-webots-v2/ros2_webots_v2.egg-info/entry_points.txt
+writing requirements to build/ros2-webots-v2/ros2_webots_v2.egg-info/requires.txt
+writing top-level names to build/ros2-webots-v2/ros2_webots_v2.egg-info/top_level.txt
+writing manifest file 'build/ros2-webots-v2/ros2_webots_v2.egg-info/SOURCES.txt'
+reading manifest file 'build/ros2-webots-v2/ros2_webots_v2.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/ros2-webots-v2/ros2_webots_v2.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/build/ros2-webots-v2/build
+creating /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/build/ros2-webots-v2/build/lib
+creating /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/build/ros2-webots-v2/build/lib/ros2-webots-v2
+copying ros2-webots-v2/brick_driver.py -> /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/build/ros2-webots-v2/build/lib/ros2-webots-v2
+copying ros2-webots-v2/__init__.py -> /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/build/ros2-webots-v2/build/lib/ros2-webots-v2
+running install
+running install_lib
+creating /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/lib/python3.10/site-packages/ros2-webots-v2
+copying /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/build/ros2-webots-v2/build/lib/ros2-webots-v2/brick_driver.py -> /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/lib/python3.10/site-packages/ros2-webots-v2
+copying /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/build/ros2-webots-v2/build/lib/ros2-webots-v2/__init__.py -> /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/lib/python3.10/site-packages/ros2-webots-v2
+byte-compiling /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/lib/python3.10/site-packages/ros2-webots-v2/brick_driver.py to brick_driver.cpython-310.pyc
+byte-compiling /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/lib/python3.10/site-packages/ros2-webots-v2/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/share/ament_index
+creating /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/share/ament_index/resource_index
+creating /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/share/ament_index/resource_index/packages

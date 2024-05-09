@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<robot name="BRICK Webots">
+    <webots>
+        <device reference="lidar" type="Lidar">
+            <ros>
+                <enabled>true</enabled>
+                <updateRate>10</updateRate>
+                <topicName>/scan</topicName>
+                <alwaysOn>true</alwaysOn>
+                <frameName>lidar</frameName>
+            </ros>
+        </device>
+        <device reference="Webcam" type="Camera">
+            <ros>
+                <enabled>true</enabled>
+                <topicName>/head_front_camera/rgb</topicName>
+                <imageSuffix>/image_raw</imageSuffix>
+                <alwaysOn>true</alwaysOn>
+                <frameName>head_front_camera_rgb_optical_frame</frameName>
+            </ros>
+        </device>
+        <plugin type="webots_ros2_control::Ros2Control" />
+    </webots>
+
+    <ros2_control name="WebotsControl" type="system">
+        <hardware>
+            <plugin>webots_ros2_control::Ros2ControlSystem</plugin>
+        </hardware>
+    </ros2_control>
+</robot>

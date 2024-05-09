@@ -1,0 +1,28 @@
+running egg_info
+writing build/ros2-webots-v2/ros2_webots_v2.egg-info/PKG-INFO
+writing dependency_links to build/ros2-webots-v2/ros2_webots_v2.egg-info/dependency_links.txt
+writing entry points to build/ros2-webots-v2/ros2_webots_v2.egg-info/entry_points.txt
+writing requirements to build/ros2-webots-v2/ros2_webots_v2.egg-info/requires.txt
+writing top-level names to build/ros2-webots-v2/ros2_webots_v2.egg-info/top_level.txt
+reading manifest file 'build/ros2-webots-v2/ros2_webots_v2.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'build/ros2-webots-v2/ros2_webots_v2.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/robot_launch.py -> /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/share/ros2-webots-v2/launch
+copying launch/robot_bringup_launch.py -> /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/share/ros2-webots-v2/launch
+copying resource/cartographer.lua -> /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/share/ros2-webots-v2/resource
+copying resource/slam_toolbox_params.yaml -> /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/share/ros2-webots-v2/resource
+copying package.xml -> /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/share/ros2-webots-v2
+creating /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/share/ros2-webots-v2/worlds
+copying worlds/default.wbt -> /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/share/ros2-webots-v2/worlds
+copying worlds/.default.wbproj -> /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/share/ros2-webots-v2/worlds
+copying worlds/default_bringup.wbt -> /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/share/ros2-webots-v2/worlds
+copying worlds/.default_bringup.wbproj -> /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/share/ros2-webots-v2/worlds
+running install_egg_info
+Copying build/ros2-webots-v2/ros2_webots_v2.egg-info to /home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/install/ros2-webots-v2/lib/python3.10/site-packages/ros2_webots_v2-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/seppe/Documents/Bachelor3/BRICK-WEBots/ros2-webots-v2/build/ros2-webots-v2/install.log'
