@@ -105,7 +105,7 @@ def generate_launch_description():
             PythonLaunchDescriptionSource(os.path.join(
                 get_package_share_directory('nav2_bringup'), 'launch', 'bringup_launch.py')),
             launch_arguments=[
-                ('map', nav2_map),
+                # ('map', nav2_map),
                 ('params_file', nav2_params),
                 ('use_sim_time', use_sim_time),
             ],
