@@ -1,0 +1,647 @@
+[0.105s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.105s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x780df2043700>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x780df214bd60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x780df214bd60>>, mixin_verb=('build',))
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.280s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.281s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.281s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ferre/brick/BRICK-WEBots'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.281s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extension 'ignore_ament_install'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extensions ['colcon_pkg']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extension 'colcon_pkg'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extensions ['colcon_meta']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extension 'colcon_meta'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extension 'ros'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extensions ['cmake', 'python']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extension 'cmake'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extension 'python'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extensions ['python_setup_py']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(designSheet) by extension 'python_setup_py'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extensions ['colcon_meta']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extension 'colcon_meta'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extensions ['ros']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extension 'ros'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extensions ['cmake', 'python']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extension 'cmake'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extension 'python'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extensions ['python_setup_py']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(photos) by extension 'python_setup_py'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-webots-v2) by extensions ['ignore', 'ignore_ament_install']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-webots-v2) by extension 'ignore'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-webots-v2) by extension 'ignore_ament_install'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-webots-v2) by extensions ['colcon_pkg']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-webots-v2) by extension 'colcon_pkg'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-webots-v2) by extensions ['colcon_meta']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-webots-v2) by extension 'colcon_meta'
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-webots-v2) by extensions ['ros']
+[0.294s] Level 1:colcon.colcon_core.package_identification:_identify(ros2-webots-v2) by extension 'ros'
+[0.315s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2-webots-v2' with type 'ros.ament_python' and name 'ros2-webots-v2'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extension 'ignore_ament_install'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extensions ['colcon_pkg']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extension 'colcon_pkg'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extensions ['colcon_meta']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extension 'colcon_meta'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extensions ['ros']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extension 'ros'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extensions ['cmake', 'python']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extension 'cmake'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extension 'python'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extensions ['python_setup_py']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server) by extension 'python_setup_py'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extension 'ignore_ament_install'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extensions ['colcon_pkg']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extension 'colcon_pkg'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extension 'ros'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extensions ['cmake', 'python']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extension 'cmake'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extension 'python'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extensions ['python_setup_py']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static) by extension 'python_setup_py'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extension 'ros'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extensions ['cmake', 'python']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extension 'cmake'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extension 'python'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extensions ['python_setup_py']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/css) by extension 'python_setup_py'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extension 'python'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extensions ['python_setup_py']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/static/js) by extension 'python_setup_py'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extension 'python'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extensions ['python_setup_py']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(server/templates) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extension 'ros'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extensions ['cmake', 'python']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extension 'cmake'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extension 'python'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extensions ['python_setup_py']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extension 'colcon_meta'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extensions ['ros']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extension 'ros'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extensions ['cmake', 'python']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extension 'cmake'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extension 'python'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extensions ['python_setup_py']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src) by extension 'python_setup_py'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extension 'colcon_pkg'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extensions ['colcon_meta']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extension 'colcon_meta'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extensions ['ros']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extension 'ros'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extensions ['cmake', 'python']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extension 'cmake'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extension 'python'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extensions ['python_setup_py']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti) by extension 'python_setup_py'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti) by extension 'ros'
+[0.321s] DEBUG:colcon.colcon_core.package_identification:Package 'vizanti/src/vizanti/vizanti' with type 'ros.ament_cmake' and name 'vizanti'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_cpp) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_cpp) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_cpp) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_cpp) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_cpp) by extensions ['colcon_meta']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_cpp) by extension 'colcon_meta'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_cpp) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_cpp) by extension 'ros'
+[0.322s] DEBUG:colcon.colcon_core.package_identification:Package 'vizanti/src/vizanti/vizanti_cpp' with type 'ros.ament_cmake' and name 'vizanti_cpp'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_demos) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_demos) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_demos) by extension 'ignore_ament_install'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_demos) by extensions ['colcon_pkg']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_demos) by extension 'colcon_pkg'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_demos) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_demos) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_demos) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_demos) by extension 'ros'
+[0.324s] DEBUG:colcon.colcon_core.package_identification:Package 'vizanti/src/vizanti/vizanti_demos' with type 'ros.ament_cmake' and name 'vizanti_demos'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_msgs) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_msgs) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_msgs) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_msgs) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_msgs) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_msgs) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_msgs) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_msgs) by extension 'ros'
+[0.325s] DEBUG:colcon.colcon_core.package_identification:Package 'vizanti/src/vizanti/vizanti_msgs' with type 'ros.ament_cmake' and name 'vizanti_msgs'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_server) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_server) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_server) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_server) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_server) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_server) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_server) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_server) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(vizanti/src/vizanti/vizanti_server) by extension 'ros'
+[0.326s] DEBUG:colcon.colcon_core.package_identification:Package 'vizanti/src/vizanti/vizanti_server' with type 'ros.ament_cmake' and name 'vizanti_server'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_brick) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_brick) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_brick) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_brick) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_brick) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_brick) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_brick) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_brick) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(webots_ros2_brick) by extension 'ros'
+[0.327s] DEBUG:colcon.colcon_core.package_identification:Package 'webots_ros2_brick' with type 'ros.ament_python' and name 'webots_ros2_brick'
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.348s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install
+[0.350s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 400 installed packages in /opt/ros/iron
+[0.352s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'ros2-webots-v2' build argument 'cmake_args' from command line to 'None'
+[0.399s] Level 5:colcon.colcon_core.verb:set package 'ros2-webots-v2' build argument 'cmake_target' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'ros2-webots-v2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'ros2-webots-v2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'ros2-webots-v2' build argument 'cmake_clean_first' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'ros2-webots-v2' build argument 'cmake_force_configure' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'ros2-webots-v2' build argument 'ament_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'ros2-webots-v2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'ros2-webots-v2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.400s] DEBUG:colcon.colcon_core.verb:Building package 'ros2-webots-v2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ferre/brick/BRICK-WEBots/build/ros2-webots-v2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2', 'merge_install': False, 'path': '/home/ferre/brick/BRICK-WEBots/ros2-webots-v2', 'symlink_install': False, 'test_result_base': None}
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'vizanti_cpp' build argument 'cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'vizanti_cpp' build argument 'cmake_target' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'vizanti_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'vizanti_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'vizanti_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'vizanti_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'vizanti_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'vizanti_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'vizanti_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.400s] DEBUG:colcon.colcon_core.verb:Building package 'vizanti_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ferre/brick/BRICK-WEBots/build/vizanti_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp', 'merge_install': False, 'path': '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_cpp', 'symlink_install': False, 'test_result_base': None}
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'vizanti_msgs' build argument 'cmake_args' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'vizanti_msgs' build argument 'cmake_target' from command line to 'None'
+[0.400s] Level 5:colcon.colcon_core.verb:set package 'vizanti_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.401s] DEBUG:colcon.colcon_core.verb:Building package 'vizanti_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs', 'merge_install': False, 'path': '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_brick' build argument 'cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_brick' build argument 'cmake_target' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_brick' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_brick' build argument 'cmake_clean_cache' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_brick' build argument 'cmake_clean_first' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_brick' build argument 'cmake_force_configure' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_brick' build argument 'ament_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_brick' build argument 'catkin_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'webots_ros2_brick' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.401s] DEBUG:colcon.colcon_core.verb:Building package 'webots_ros2_brick' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick', 'merge_install': False, 'path': '/home/ferre/brick/BRICK-WEBots/webots_ros2_brick', 'symlink_install': False, 'test_result_base': None}
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_demos' build argument 'cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_demos' build argument 'cmake_target' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_demos' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_demos' build argument 'cmake_clean_cache' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_demos' build argument 'cmake_clean_first' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_demos' build argument 'cmake_force_configure' from command line to 'False'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_demos' build argument 'ament_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_demos' build argument 'catkin_cmake_args' from command line to 'None'
+[0.401s] Level 5:colcon.colcon_core.verb:set package 'vizanti_demos' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.402s] DEBUG:colcon.colcon_core.verb:Building package 'vizanti_demos' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ferre/brick/BRICK-WEBots/build/vizanti_demos', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos', 'merge_install': False, 'path': '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_demos', 'symlink_install': False, 'test_result_base': None}
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti_server' build argument 'cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti_server' build argument 'cmake_target' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti_server' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti_server' build argument 'cmake_clean_cache' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti_server' build argument 'cmake_clean_first' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti_server' build argument 'cmake_force_configure' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti_server' build argument 'ament_cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti_server' build argument 'catkin_cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti_server' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.402s] DEBUG:colcon.colcon_core.verb:Building package 'vizanti_server' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ferre/brick/BRICK-WEBots/build/vizanti_server', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ferre/brick/BRICK-WEBots/install/vizanti_server', 'merge_install': False, 'path': '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_server', 'symlink_install': False, 'test_result_base': None}
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti' build argument 'cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti' build argument 'cmake_target' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti' build argument 'cmake_clean_cache' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti' build argument 'cmake_clean_first' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti' build argument 'cmake_force_configure' from command line to 'False'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti' build argument 'ament_cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti' build argument 'catkin_cmake_args' from command line to 'None'
+[0.402s] Level 5:colcon.colcon_core.verb:set package 'vizanti' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.402s] DEBUG:colcon.colcon_core.verb:Building package 'vizanti' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ferre/brick/BRICK-WEBots/build/vizanti', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ferre/brick/BRICK-WEBots/install/vizanti', 'merge_install': False, 'path': '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti', 'symlink_install': False, 'test_result_base': None}
+[0.403s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.404s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.404s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs' with build type 'ament_cmake'
+[0.404s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs'
+[0.406s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.406s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.406s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.411s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ferre/brick/BRICK-WEBots/ros2-webots-v2' with build type 'ament_python'
+[0.411s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2-webots-v2', 'ament_prefix_path')
+[0.411s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/share/ros2-webots-v2/hook/ament_prefix_path.ps1'
+[0.412s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/share/ros2-webots-v2/hook/ament_prefix_path.dsv'
+[0.413s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/share/ros2-webots-v2/hook/ament_prefix_path.sh'
+[0.415s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.415s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.419s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_cpp' with build type 'ament_cmake'
+[0.419s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_cpp'
+[0.419s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.419s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.423s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ferre/brick/BRICK-WEBots/webots_ros2_brick' with build type 'ament_python'
+[0.423s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_brick', 'ament_prefix_path')
+[0.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/share/webots_ros2_brick/hook/ament_prefix_path.ps1'
+[0.425s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/share/webots_ros2_brick/hook/ament_prefix_path.dsv'
+[0.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/share/webots_ros2_brick/hook/ament_prefix_path.sh'
+[0.426s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.426s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.443s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake /home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs -DCMAKE_INSTALL_PREFIX=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs
+[0.718s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ferre/brick/BRICK-WEBots/ros2-webots-v2'
+[0.718s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.718s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.728s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_cpp': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake /home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_cpp -DCMAKE_INSTALL_PREFIX=/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp
+[1.058s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ferre/brick/BRICK-WEBots/webots_ros2_brick'
+[1.059s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.059s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.488s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/webots_ros2_brick': PYTHONPATH=/home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/prefix_override:/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/webots_ros2_brick build --build-base /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build install --record /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/install.log --single-version-externally-managed install_data
+[1.506s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/ros2-webots-v2': PYTHONPATH=/home/ferre/brick/BRICK-WEBots/build/ros2-webots-v2/prefix_override:/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/ros2-webots-v2 build --build-base /home/ferre/brick/BRICK-WEBots/build/ros2-webots-v2/build install --record /home/ferre/brick/BRICK-WEBots/build/ros2-webots-v2/install.log --single-version-externally-managed install_data
+[1.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/webots_ros2_brick' returned '0': PYTHONPATH=/home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/prefix_override:/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/webots_ros2_brick build --build-base /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build install --record /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/install.log --single-version-externally-managed install_data
+[1.872s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick' for CMake module files
+[1.872s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick' for CMake config files
+[1.873s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib'
+[1.873s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/bin'
+[1.874s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/pkgconfig/webots_ros2_brick.pc'
+[1.874s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages'
+[1.874s] Level 1:colcon.colcon_core.shell:create_environment_hook('webots_ros2_brick', 'pythonpath')
+[1.874s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/share/webots_ros2_brick/hook/pythonpath.ps1'
+[1.874s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/share/webots_ros2_brick/hook/pythonpath.dsv'
+[1.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/share/webots_ros2_brick/hook/pythonpath.sh'
+[1.875s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/bin'
+[1.875s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(webots_ros2_brick)
+[1.875s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/share/webots_ros2_brick/package.ps1'
+[1.876s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/share/webots_ros2_brick/package.dsv'
+[1.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/share/webots_ros2_brick/package.sh'
+[1.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/share/webots_ros2_brick/package.bash'
+[1.878s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/share/webots_ros2_brick/package.zsh'
+[1.879s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/share/colcon-core/packages/webots_ros2_brick)
+[1.882s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2' for CMake module files
+[1.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/ros2-webots-v2' returned '0': PYTHONPATH=/home/ferre/brick/BRICK-WEBots/build/ros2-webots-v2/prefix_override:/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/ros2-webots-v2 build --build-base /home/ferre/brick/BRICK-WEBots/build/ros2-webots-v2/build install --record /home/ferre/brick/BRICK-WEBots/build/ros2-webots-v2/install.log --single-version-externally-managed install_data
+[1.883s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2' for CMake config files
+[1.884s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/lib'
+[1.884s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/bin'
+[1.884s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/lib/pkgconfig/ros2-webots-v2.pc'
+[1.884s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/lib/python3.10/site-packages'
+[1.884s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2-webots-v2', 'pythonpath')
+[1.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/share/ros2-webots-v2/hook/pythonpath.ps1'
+[1.885s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/share/ros2-webots-v2/hook/pythonpath.dsv'
+[1.885s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/share/ros2-webots-v2/hook/pythonpath.sh'
+[1.886s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/bin'
+[1.886s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2-webots-v2)
+[1.886s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/share/ros2-webots-v2/package.ps1'
+[1.887s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/share/ros2-webots-v2/package.dsv'
+[1.887s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/share/ros2-webots-v2/package.sh'
+[1.888s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/share/ros2-webots-v2/package.bash'
+[1.888s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/share/ros2-webots-v2/package.zsh'
+[1.889s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ferre/brick/BRICK-WEBots/install/ros2-webots-v2/share/colcon-core/packages/ros2-webots-v2)
+[2.602s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_cpp' returned '0': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake /home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_cpp -DCMAKE_INSTALL_PREFIX=/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp
+[2.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_cpp': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_cpp -- -j12 -l12
+[3.098s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs' returned '0': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake /home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs -DCMAKE_INSTALL_PREFIX=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs
+[3.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs -- -j12 -l12
+[12.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs' returned '0': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs -- -j12 -l12
+[12.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs
+[12.876s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vizanti_msgs)
+[12.876s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs' for CMake module files
+[12.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs' returned '0': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs
+[12.878s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs' for CMake config files
+[12.878s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti_msgs', 'cmake_prefix_path')
+[12.878s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/cmake_prefix_path.ps1'
+[12.879s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/cmake_prefix_path.dsv'
+[12.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/cmake_prefix_path.sh'
+[12.879s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib'
+[12.879s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti_msgs', 'ld_library_path_lib')
+[12.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/ld_library_path_lib.ps1'
+[12.880s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/ld_library_path_lib.dsv'
+[12.880s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/ld_library_path_lib.sh'
+[12.880s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/bin'
+[12.880s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/pkgconfig/vizanti_msgs.pc'
+[12.880s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages'
+[12.880s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti_msgs', 'pythonpath')
+[12.880s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/pythonpath.ps1'
+[12.881s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/pythonpath.dsv'
+[12.881s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/pythonpath.sh'
+[12.881s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/bin'
+[12.881s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/package.ps1'
+[12.882s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/package.dsv'
+[12.882s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/package.sh'
+[12.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/package.bash'
+[12.883s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/package.zsh'
+[12.883s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/colcon-core/packages/vizanti_msgs)
+[13.179s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vizanti_msgs)
+[13.179s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs' for CMake module files
+[13.180s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs' for CMake config files
+[13.180s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti_msgs', 'cmake_prefix_path')
+[13.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/cmake_prefix_path.ps1'
+[13.181s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/cmake_prefix_path.dsv'
+[13.181s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/cmake_prefix_path.sh'
+[13.181s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib'
+[13.181s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti_msgs', 'ld_library_path_lib')
+[13.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/ld_library_path_lib.ps1'
+[13.182s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/ld_library_path_lib.dsv'
+[13.182s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/ld_library_path_lib.sh'
+[13.182s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/bin'
+[13.183s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/pkgconfig/vizanti_msgs.pc'
+[13.183s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages'
+[13.183s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti_msgs', 'pythonpath')
+[13.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/pythonpath.ps1'
+[13.183s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/pythonpath.dsv'
+[13.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/hook/pythonpath.sh'
+[13.184s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/bin'
+[13.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/package.ps1'
+[13.185s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/package.dsv'
+[13.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/package.sh'
+[13.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/package.bash'
+[13.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/package.zsh'
+[13.190s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/colcon-core/packages/vizanti_msgs)
+[13.191s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_server' with build type 'ament_cmake'
+[13.191s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_server'
+[13.191s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.191s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.198s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_demos' with build type 'ament_cmake'
+[13.198s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_demos'
+[13.198s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.198s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[13.209s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_server': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_server -DCMAKE_INSTALL_PREFIX=/home/ferre/brick/BRICK-WEBots/install/vizanti_server
+[13.212s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_demos': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_demos -DCMAKE_INSTALL_PREFIX=/home/ferre/brick/BRICK-WEBots/install/vizanti_demos
+[14.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_cpp' returned '0': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_cpp -- -j12 -l12
+[14.114s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_cpp': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_cpp
+[14.135s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vizanti_cpp)
+[14.135s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp' for CMake module files
+[14.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_cpp' returned '0': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_cpp
+[14.136s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp' for CMake config files
+[14.137s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti_cpp', 'cmake_prefix_path')
+[14.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/hook/cmake_prefix_path.ps1'
+[14.137s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/hook/cmake_prefix_path.dsv'
+[14.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/hook/cmake_prefix_path.sh'
+[14.138s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/lib'
+[14.138s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/bin'
+[14.138s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/lib/pkgconfig/vizanti_cpp.pc'
+[14.138s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/lib/python3.10/site-packages'
+[14.138s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/bin'
+[14.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/package.ps1'
+[14.139s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/package.dsv'
+[14.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/package.sh'
+[14.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/package.bash'
+[14.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/package.zsh'
+[14.140s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/colcon-core/packages/vizanti_cpp)
+[14.172s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vizanti_cpp)
+[14.172s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp' for CMake module files
+[14.172s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp' for CMake config files
+[14.172s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti_cpp', 'cmake_prefix_path')
+[14.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/hook/cmake_prefix_path.ps1'
+[14.173s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/hook/cmake_prefix_path.dsv'
+[14.174s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/hook/cmake_prefix_path.sh'
+[14.174s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/lib'
+[14.174s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/bin'
+[14.174s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/lib/pkgconfig/vizanti_cpp.pc'
+[14.174s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/lib/python3.10/site-packages'
+[14.174s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/bin'
+[14.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/package.ps1'
+[14.175s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/package.dsv'
+[14.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/package.sh'
+[14.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/package.bash'
+[14.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/package.zsh'
+[14.177s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/colcon-core/packages/vizanti_cpp)
+[15.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_server' returned '0': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_server -DCMAKE_INSTALL_PREFIX=/home/ferre/brick/BRICK-WEBots/install/vizanti_server
+[15.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_server': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_server -- -j12 -l12
+[15.490s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_server' returned '0': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_server -- -j12 -l12
+[15.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_server': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_server
+[15.580s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vizanti_server)
+[15.581s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server' for CMake module files
+[15.581s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_server' returned '0': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_server
+[15.582s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server' for CMake config files
+[15.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti_server', 'cmake_prefix_path')
+[15.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/hook/cmake_prefix_path.ps1'
+[15.583s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/hook/cmake_prefix_path.dsv'
+[15.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/hook/cmake_prefix_path.sh'
+[15.583s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/lib'
+[15.583s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/bin'
+[15.583s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/lib/pkgconfig/vizanti_server.pc'
+[15.583s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/lib/python3.10/site-packages'
+[15.584s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/bin'
+[15.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/package.ps1'
+[15.584s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/package.dsv'
+[15.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/package.sh'
+[15.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/package.bash'
+[15.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/package.zsh'
+[15.585s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/colcon-core/packages/vizanti_server)
+[15.614s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vizanti_server)
+[15.615s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server' for CMake module files
+[15.616s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server' for CMake config files
+[15.616s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti_server', 'cmake_prefix_path')
+[15.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/hook/cmake_prefix_path.ps1'
+[15.617s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/hook/cmake_prefix_path.dsv'
+[15.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/hook/cmake_prefix_path.sh'
+[15.617s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/lib'
+[15.618s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/bin'
+[15.618s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/lib/pkgconfig/vizanti_server.pc'
+[15.618s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/lib/python3.10/site-packages'
+[15.618s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/bin'
+[15.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/package.ps1'
+[15.619s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/package.dsv'
+[15.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/package.sh'
+[15.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/package.bash'
+[15.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/vizanti_server/package.zsh'
+[15.620s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ferre/brick/BRICK-WEBots/install/vizanti_server/share/colcon-core/packages/vizanti_server)
+[15.620s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti' with build type 'ament_cmake'
+[15.620s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti'
+[15.620s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[15.620s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[15.637s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_server:/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_server:/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti -DCMAKE_INSTALL_PREFIX=/home/ferre/brick/BRICK-WEBots/install/vizanti
+[15.702s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_demos' returned '0': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_demos -DCMAKE_INSTALL_PREFIX=/home/ferre/brick/BRICK-WEBots/install/vizanti_demos
+[15.704s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_demos': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_demos -- -j12 -l12
+[15.759s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_demos' returned '0': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_demos -- -j12 -l12
+[15.789s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_demos': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_demos
+[15.804s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vizanti_demos)
+[15.804s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos' for CMake module files
+[15.805s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_demos' returned '0': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_demos
+[15.805s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos' for CMake config files
+[15.805s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti_demos', 'cmake_prefix_path')
+[15.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/hook/cmake_prefix_path.ps1'
+[15.806s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/hook/cmake_prefix_path.dsv'
+[15.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/hook/cmake_prefix_path.sh'
+[15.807s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/lib'
+[15.807s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/bin'
+[15.807s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/lib/pkgconfig/vizanti_demos.pc'
+[15.807s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/lib/python3.10/site-packages'
+[15.807s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/bin'
+[15.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/package.ps1'
+[15.808s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/package.dsv'
+[15.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/package.sh'
+[15.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/package.bash'
+[15.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/package.zsh'
+[15.809s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/colcon-core/packages/vizanti_demos)
+[15.837s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vizanti_demos)
+[15.837s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos' for CMake module files
+[15.838s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos' for CMake config files
+[15.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti_demos', 'cmake_prefix_path')
+[15.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/hook/cmake_prefix_path.ps1'
+[15.838s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/hook/cmake_prefix_path.dsv'
+[15.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/hook/cmake_prefix_path.sh'
+[15.839s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/lib'
+[15.839s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/bin'
+[15.839s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/lib/pkgconfig/vizanti_demos.pc'
+[15.839s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/lib/python3.10/site-packages'
+[15.839s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/bin'
+[15.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/package.ps1'
+[15.840s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/package.dsv'
+[15.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/package.sh'
+[15.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/package.bash'
+[15.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/vizanti_demos/package.zsh'
+[15.841s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ferre/brick/BRICK-WEBots/install/vizanti_demos/share/colcon-core/packages/vizanti_demos)
+[16.009s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti' returned '0': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_server:/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_server:/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti -DCMAKE_INSTALL_PREFIX=/home/ferre/brick/BRICK-WEBots/install/vizanti
+[16.011s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_server:/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_server:/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti -- -j12 -l12
+[16.057s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti' returned '0': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_server:/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_server:/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti -- -j12 -l12
+[16.085s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_server:/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_server:/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti
+[16.100s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vizanti)
+[16.101s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti' for CMake module files
+[16.101s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti' returned '0': AMENT_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_server:/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_server:/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs:/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron LD_LIBRARY_PATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti
+[16.101s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti' for CMake config files
+[16.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti', 'cmake_prefix_path')
+[16.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/hook/cmake_prefix_path.ps1'
+[16.102s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/hook/cmake_prefix_path.dsv'
+[16.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/hook/cmake_prefix_path.sh'
+[16.103s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti/bin'
+[16.103s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti/lib/pkgconfig/vizanti.pc'
+[16.103s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti/lib/python3.10/site-packages'
+[16.103s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti/bin'
+[16.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/package.ps1'
+[16.104s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/package.dsv'
+[16.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/package.sh'
+[16.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/package.bash'
+[16.105s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/package.zsh'
+[16.105s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ferre/brick/BRICK-WEBots/install/vizanti/share/colcon-core/packages/vizanti)
+[16.131s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vizanti)
+[16.131s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti' for CMake module files
+[16.131s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti' for CMake config files
+[16.131s] Level 1:colcon.colcon_core.shell:create_environment_hook('vizanti', 'cmake_prefix_path')
+[16.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/hook/cmake_prefix_path.ps1'
+[16.132s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/hook/cmake_prefix_path.dsv'
+[16.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/hook/cmake_prefix_path.sh'
+[16.133s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti/bin'
+[16.133s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti/lib/pkgconfig/vizanti.pc'
+[16.133s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti/lib/python3.10/site-packages'
+[16.133s] Level 1:colcon.colcon_core.environment:checking '/home/ferre/brick/BRICK-WEBots/install/vizanti/bin'
+[16.134s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/package.ps1'
+[16.134s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/package.dsv'
+[16.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/package.sh'
+[16.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/package.bash'
+[16.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/package.zsh'
+[16.136s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ferre/brick/BRICK-WEBots/install/vizanti/share/colcon-core/packages/vizanti)
+[16.136s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[16.136s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[16.136s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[16.136s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[16.143s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[16.143s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[16.143s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[16.157s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[16.157s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ferre/brick/BRICK-WEBots/install/local_setup.ps1'
+[16.158s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ferre/brick/BRICK-WEBots/install/_local_setup_util_ps1.py'
+[16.159s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ferre/brick/BRICK-WEBots/install/setup.ps1'
+[16.160s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ferre/brick/BRICK-WEBots/install/local_setup.sh'
+[16.161s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ferre/brick/BRICK-WEBots/install/_local_setup_util_sh.py'
+[16.162s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ferre/brick/BRICK-WEBots/install/setup.sh'
+[16.163s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ferre/brick/BRICK-WEBots/install/local_setup.bash'
+[16.163s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ferre/brick/BRICK-WEBots/install/setup.bash'
+[16.164s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ferre/brick/BRICK-WEBots/install/local_setup.zsh'
+[16.165s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ferre/brick/BRICK-WEBots/install/setup.zsh'

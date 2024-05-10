@@ -31,7 +31,7 @@
       </div>
 
       <img id="cameraView" src="" alt="camera"/>
-
+      <iframe src="http://localhost:5000/" width="800" height="600"></iframe>
       <!--
       <iframe src="http://localhost:8080" width="800" height="600"></iframe>
       -->
@@ -57,10 +57,19 @@
           <input id="broadcast" type="checkbox"/>
         </div>
       </div>
+      <div class="goal-container">
+        <div class="grid-item"><p>set x and y goal:</p></div>
+        <div class="grid-item">
+          <input id="x_coord" type="text" size="40" value="put x coord"/>
+          <input id="y_coord" type="text" size="40" value="put y coord"/>
+          <input id="goal-button" type="button" value="Set goal"/>
+        </div>
+      </div>
     </header>
     <div class="webots-view-container">
       <webots-view></webots-view>
     </div>
+    
 
     <!-- <script type="module" src="https://cyberbotics.com/wwi/R2023b/WebotsView.js"></script>
     <script src="../static/js/setup_viewer.js"></script> -->

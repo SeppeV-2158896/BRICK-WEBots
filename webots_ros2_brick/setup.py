@@ -12,6 +12,8 @@ data_files.append(('share/' + package_name + '/protos', ['protos/BRICK.proto']))
 data_files.append(('share/' + package_name + '/protos', ['protos/Hoap2.proto']))
 data_files.append(('share/' + package_name, ['metal.jpg']))
 data_files.append(('share/' + package_name, ['texture.jpg']))
+data_files.append(('share/' + package_name + '/rviz', ['rviz/default.rviz']))
+data_files.append(('share/' + package_name + '/config', ['config/slam_config.yaml']))
 #data_files.append(('share/' + package_name + '/config', ['config/test_diff_drive_controller.yaml']))
 setup(
     name=package_name,

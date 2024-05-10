@@ -1,0 +1,15 @@
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/ament_index/resource_index/package_run_dependencies/vizanti
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/ament_index/resource_index/parent_prefix_path/vizanti
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/environment/ament_prefix_path.sh
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/environment/ament_prefix_path.dsv
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/environment/path.sh
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/environment/path.dsv
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/local_setup.bash
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/local_setup.sh
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/local_setup.zsh
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/local_setup.dsv
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/package.dsv
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/ament_index/resource_index/packages/vizanti
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/cmake/vizantiConfig.cmake
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/cmake/vizantiConfig-version.cmake
+/home/ferre/brick/BRICK-WEBots/install/vizanti/share/vizanti/package.xml

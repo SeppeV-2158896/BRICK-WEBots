@@ -38,48 +38,27 @@ def generate_launch_description():
         executable='navigator',
     )
 
-    robot_controllers = PathJoinSubstitution(
-        [
-            FindPackageShare("webots_ros2_brick"),
-            "config",
-            "test_diff_drive_controller.yaml",
-        ]
+    navigation_launch = launch.actions.ExecuteProcess(
+        cmd=['ros2', 'launch', 'nav2_bringup', 'navigation_launch.py', 'use_sim_time:=True'],
+        output='screen',
     )
-
-    """control_node = Node(
-        package="controller_manager",
-        executable="ros2_control_node",
-        parameters=[robot_controllers],
-        output="both",
-    )"""
-    """nav2_launch = launch.actions.ExecuteProcess(
-            cmd=['ros2', 'launch', 'nav2_bringup', 'navigation_launch.py'],
-            output='screen',
-        )"""
-
     slam_toolbox_launch = launch.actions.ExecuteProcess(
-        cmd=['ros2', 'launch', 'slam_toolbox', 'online_async_launch.py'],
+        cmd=['ros2', 'run', 'slam_toolbox', 'async_slam_toolbox_node',
+            '--ros-args', '--param', 'use_sim_tile:=true', '--params-file', os.path.join(package_dir, 'config', 'slam_config.yaml')],
         output='screen',
     )
 
-    rviz = Node(
-        package="rviz2",
-        executable="rviz2",
-        arguments=["-d", os.path.join(package_dir, "rviz", "slam_rviz.rviz")]
-    )
-    
+
   
     return LaunchDescription([
-        #rviz,
         webots,
-        #mqtt_node,
+        #viz_web,
         navigation_node,
         my_robot_driver,
         mqtt_receiver_node,
         mqtt_videostream_node,
-        #control_node,
-        #nav2_launch,
-        #slam_toolbox_launch,
+        navigation_launch,
+        slam_toolbox_launch,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,

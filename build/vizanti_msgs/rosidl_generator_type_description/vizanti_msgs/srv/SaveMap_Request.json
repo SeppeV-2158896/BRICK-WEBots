@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "vizanti_msgs/srv/SaveMap_Request",
+      "fields": [
+        {
+          "name": "file_path",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "topic",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "vizanti_msgs/srv/SaveMap_Request",
+      "hash_string": "RIHS01_ea60c7a579b999df6a243d2682e31667d010a56853e50a354d2eb600ae93bc5a"
+    }
+  ]
+}

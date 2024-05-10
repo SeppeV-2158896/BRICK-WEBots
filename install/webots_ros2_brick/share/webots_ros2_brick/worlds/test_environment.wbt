@@ -1,0 +1,41 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "../protos/BRICK.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.35207098846243773 0.2791246185340117 0.8933842770114799 1.9090751708563154
+  position 1.8434668486778185 -2.246136333528096 2.3978182163812694
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+}
+Pose {
+  children [
+    Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "../metal.jpg"
+          ]
+        }
+      }
+      geometry Cone {
+        bottomRadius 0.5
+        height 1
+      }
+    }
+  ]
+}
+BRICK {
+  translation 1.07 0 0.2
+  controller "robot_controller"
+}

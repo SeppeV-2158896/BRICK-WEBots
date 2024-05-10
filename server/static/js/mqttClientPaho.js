@@ -56,7 +56,7 @@ function setup() {
     subscribeOnTopic("movement");
     subscribeOnTopic("emergencyStop");
     subscribeOnTopic("videostream")
-
+    subscribeOnTopic("goal")
     setEventListenersArrowButtons('forward');
     setEventListenersArrowButtons('left');
     setEventListenersArrowButtons('backward');
@@ -80,6 +80,16 @@ function setEventListenersArrowButtons(direction) {
     });
 }
 
+
+function setEventListenersGoalButton(){
+    var goalButton = document.getElementById('goal-button');
+
+    goalButton.addEventListener('click', function(){
+        var x = document.getElementById('x_coord');
+        var y = document.getElementById('y_coord');
+        sendData(x + ";" + y,'goal')
+    })
+}
 function setEventListenersEmergencyStopButton() {
     var emergencyStopButton = document.getElementById('emergency-stop');
 

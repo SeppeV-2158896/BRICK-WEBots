@@ -1,0 +1,46 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "vizanti_msgs/srv/RecordRosbag_Request",
+      "fields": [
+        {
+          "name": "topics",
+          "type": {
+            "type_id": 161,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "start",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "path",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "vizanti_msgs/srv/RecordRosbag_Request",
+      "hash_string": "RIHS01_dc2391dfc53b65b599c38d1f12f686f1d84b9488a5596f474d4211c83fd900cc"
+    }
+  ]
+}

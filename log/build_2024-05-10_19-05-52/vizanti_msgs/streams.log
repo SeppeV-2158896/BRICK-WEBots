@@ -1,0 +1,490 @@
+[0.037s] Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake /home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs -DCMAKE_INSTALL_PREFIX=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs
+[0.324s] -- The C compiler identification is GNU 11.4.0
+[0.324s] -- The CXX compiler identification is GNU 11.4.0
+[0.324s] -- Detecting C compiler ABI info
+[0.365s] -- Detecting C compiler ABI info - done
+[0.372s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.373s] -- Detecting C compile features
+[0.373s] -- Detecting C compile features - done
+[0.377s] -- Detecting CXX compiler ABI info
+[0.478s] -- Detecting CXX compiler ABI info - done
+[0.486s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.486s] -- Detecting CXX compile features
+[0.486s] -- Detecting CXX compile features - done
+[0.493s] -- Found ament_cmake: 2.0.5 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.683s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.809s] -- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)
+[0.819s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.895s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.967s] -- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)
+[0.975s] -- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)
+[1.056s] -- Found nav_msgs: 5.0.0 (/opt/ros/iron/share/nav_msgs/cmake)
+[1.239s] -- Found actionlib_msgs: 5.0.0 (/opt/ros/iron/share/actionlib_msgs/cmake)
+[1.239s] [0mCMake Deprecation Warning at /opt/ros/iron/share/actionlib_msgs/cmake/actionlib_msgsConfig.cmake:31 (message):
+[1.239s]   Package 'actionlib_msgs' is deprecated (This package will be removed in a
+[1.239s]   future ROS distro, once the ROS 1 bridge supports actions.)
+[1.239s] Call Stack (most recent call first):
+[1.239s]   CMakeLists.txt:11 (find_package)
+[1.239s] 
+[1.239s] [0m
+[1.774s] -- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)
+[2.064s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.442s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.465s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.468s] -- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)
+[2.499s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.500s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.500s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.500s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.522s] -- Found PythonExtra: .so  
+[2.610s] -- Configuring done
+[2.673s] -- Generating done
+[2.676s] -- Build files have been written to: /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs
+[2.693s] Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs' returned '0': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake /home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs -DCMAKE_INSTALL_PREFIX=/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs
+[2.695s] Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs -- -j12 -l12
+[2.759s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[2.770s] [  1%] Built target ament_cmake_python_copy_vizanti_msgs
+[3.042s] running egg_info
+[3.042s] creating vizanti_msgs.egg-info
+[3.043s] writing vizanti_msgs.egg-info/PKG-INFO
+[3.043s] writing dependency_links to vizanti_msgs.egg-info/dependency_links.txt
+[3.043s] writing top-level names to vizanti_msgs.egg-info/top_level.txt
+[3.043s] writing manifest file 'vizanti_msgs.egg-info/SOURCES.txt'
+[3.048s] reading manifest file 'vizanti_msgs.egg-info/SOURCES.txt'
+[3.049s] writing manifest file 'vizanti_msgs.egg-info/SOURCES.txt'
+[3.070s] [  1%] Built target vizanti_msgs__rosidl_generator_type_description
+[3.085s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[3.096s] [  2%] Built target ament_cmake_python_build_vizanti_msgs_egg
+[3.099s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.203s] [  2%] Built target vizanti_msgs__cpp
+[4.333s] [  5%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/set_node_parameter__description.c.o[0m
+[4.334s] [  5%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/get_node_parameters__type_support.c.o[0m
+[4.334s] [  5%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/get_node_parameters__functions.c.o[0m
+[4.337s] [  8%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/load_map__functions.c.o[0m
+[4.337s] [  8%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/set_node_parameter__functions.c.o[0m
+[4.337s] [  8%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/load_map__description.c.o[0m
+[4.339s] [ 11%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/save_map__functions.c.o[0m
+[4.339s] [ 11%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/get_node_parameters__description.c.o[0m
+[4.339s] [ 11%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/save_map__description.c.o[0m
+[4.340s] [ 12%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/set_node_parameter__type_support.c.o[0m
+[4.343s] [ 13%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/save_map__type_support.c.o[0m
+[4.353s] [ 14%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/load_map__type_support.c.o[0m
+[4.420s] [ 15%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/record_rosbag__description.c.o[0m
+[4.440s] [ 16%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/record_rosbag__functions.c.o[0m
+[4.452s] [ 17%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/manage_node__description.c.o[0m
+[4.455s] [ 18%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/record_rosbag__type_support.c.o[0m
+[4.459s] [ 19%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/manage_node__functions.c.o[0m
+[4.465s] [ 20%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/manage_node__type_support.c.o[0m
+[4.469s] [ 21%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/list_packages__functions.c.o[0m
+[4.472s] [ 22%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/list_packages__description.c.o[0m
+[4.504s] [ 24%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/list_packages__type_support.c.o[0m
+[4.504s] [ 24%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/list_executables__description.c.o[0m
+[4.509s] [ 25%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/list_executables__functions.c.o[0m
+[4.541s] [ 25%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_c.dir/rosidl_generator_c/vizanti_msgs/srv/detail/list_executables__type_support.c.o[0m
+[4.610s] [ 26%] [32m[1mLinking C shared library libvizanti_msgs__rosidl_generator_c.so[0m
+[4.667s] [ 26%] Built target vizanti_msgs__rosidl_generator_c
+[4.681s] [ 27%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.682s] [ 28%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.684s] [ 31%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.684s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.684s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.685s] [ 32%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.378s] [ 33%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vizanti_msgs/srv/record_rosbag__type_support.cpp.o[0m
+[5.380s] [ 34%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vizanti_msgs/srv/list_packages__type_support.cpp.o[0m
+[5.381s] [ 35%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vizanti_msgs/srv/set_node_parameter__type_support.cpp.o[0m
+[5.382s] [ 36%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vizanti_msgs/srv/get_node_parameters__type_support.cpp.o[0m
+[5.384s] [ 37%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vizanti_msgs/srv/load_map__type_support.cpp.o[0m
+[5.393s] [ 38%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vizanti_msgs/srv/save_map__type_support.cpp.o[0m
+[5.394s] [ 39%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vizanti_msgs/srv/manage_node__type_support.cpp.o[0m
+[5.499s] [ 40%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vizanti_msgs/srv/list_executables__type_support.cpp.o[0m
+[5.582s] [ 41%] [32m[1mLinking CXX shared library libvizanti_msgs__rosidl_typesupport_c.so[0m
+[5.587s] [ 42%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vizanti_msgs/srv/get_node_parameters__type_support.cpp.o[0m
+[5.589s] [ 44%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vizanti_msgs/srv/record_rosbag__type_support.cpp.o[0m
+[5.590s] [ 44%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vizanti_msgs/srv/save_map__type_support.cpp.o[0m
+[5.591s] [ 46%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vizanti_msgs/srv/manage_node__type_support.cpp.o[0m
+[5.591s] [ 46%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vizanti_msgs/srv/load_map__type_support.cpp.o[0m
+[5.595s] [ 46%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vizanti_msgs/srv/set_node_parameter__type_support.cpp.o[0m
+[5.612s] [ 47%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vizanti_msgs/srv/list_packages__type_support.cpp.o[0m
+[5.723s] [ 47%] Built target vizanti_msgs__rosidl_typesupport_c
+[5.753s] [ 48%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vizanti_msgs/srv/list_executables__type_support.cpp.o[0m
+[6.390s] [ 49%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vizanti_msgs/srv/detail/get_node_parameters__type_support.cpp.o[0m
+[6.437s] [ 50%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vizanti_msgs/srv/detail/dds_fastrtps/get_node_parameters__type_support.cpp.o[0m
+[6.596s] [ 51%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vizanti_msgs/srv/detail/dds_fastrtps/set_node_parameter__type_support.cpp.o[0m
+[6.627s] [ 52%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vizanti_msgs/srv/detail/dds_fastrtps/save_map__type_support.cpp.o[0m
+[6.632s] [ 53%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vizanti_msgs/srv/detail/dds_fastrtps/load_map__type_support.cpp.o[0m
+[6.652s] [ 53%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vizanti_msgs/srv/detail/dds_fastrtps/manage_node__type_support.cpp.o[0m
+[6.665s] [ 54%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vizanti_msgs/srv/detail/dds_fastrtps/record_rosbag__type_support.cpp.o[0m
+[6.674s] [ 55%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vizanti_msgs/srv/detail/dds_fastrtps/list_packages__type_support.cpp.o[0m
+[6.690s] [ 56%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vizanti_msgs/srv/detail/get_node_parameters__type_support.c.o[0m
+[6.710s] [ 57%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vizanti_msgs/srv/detail/set_node_parameter__type_support.cpp.o[0m
+[6.761s] [ 58%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vizanti_msgs/srv/detail/get_node_parameters__type_support_c.cpp.o[0m
+[6.866s] [ 59%] [32m[1mLinking CXX shared library libvizanti_msgs__rosidl_typesupport_cpp.so[0m
+[6.922s] [ 60%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vizanti_msgs/srv/detail/set_node_parameter__type_support.c.o[0m
+[7.171s] [ 61%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vizanti_msgs/srv/detail/save_map__type_support.c.o[0m
+[7.307s] [ 61%] Built target vizanti_msgs__rosidl_typesupport_cpp
+[7.327s] [ 62%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vizanti_msgs/srv/detail/load_map__type_support.c.o[0m
+[7.372s] [ 63%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vizanti_msgs/srv/detail/record_rosbag__type_support.c.o[0m
+[7.498s] [ 64%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vizanti_msgs/srv/detail/manage_node__type_support.c.o[0m
+[7.510s] [ 65%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vizanti_msgs/srv/detail/set_node_parameter__type_support_c.cpp.o[0m
+[7.611s] [ 66%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vizanti_msgs/srv/detail/dds_fastrtps/list_executables__type_support.cpp.o[0m
+[7.627s] [ 67%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vizanti_msgs/srv/detail/save_map__type_support.cpp.o[0m
+[7.648s] [ 68%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vizanti_msgs/srv/detail/list_packages__type_support.c.o[0m
+[7.744s] [ 69%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vizanti_msgs/srv/detail/list_executables__type_support.c.o[0m
+[7.848s] [ 70%] [32m[1mLinking C shared library libvizanti_msgs__rosidl_typesupport_introspection_c.so[0m
+[7.901s] [ 71%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vizanti_msgs/srv/detail/save_map__type_support_c.cpp.o[0m
+[7.911s] [ 72%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vizanti_msgs/srv/detail/load_map__type_support.cpp.o[0m
+[7.965s] [ 73%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vizanti_msgs/srv/detail/record_rosbag__type_support.cpp.o[0m
+[7.967s] [ 73%] Built target vizanti_msgs__rosidl_typesupport_introspection_c
+[7.982s] [ 74%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vizanti_msgs/srv/detail/manage_node__type_support.cpp.o[0m
+[8.000s] [ 75%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vizanti_msgs/srv/detail/list_packages__type_support.cpp.o[0m
+[8.002s] [ 76%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vizanti_msgs/srv/detail/load_map__type_support_c.cpp.o[0m
+[8.140s] [ 77%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vizanti_msgs/srv/detail/record_rosbag__type_support_c.cpp.o[0m
+[8.215s] [ 78%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vizanti_msgs/srv/detail/manage_node__type_support_c.cpp.o[0m
+[8.228s] [ 79%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vizanti_msgs/srv/detail/list_packages__type_support_c.cpp.o[0m
+[8.405s] [ 80%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vizanti_msgs/srv/detail/list_executables__type_support_c.cpp.o[0m
+[8.690s] [ 81%] [32mBuilding CXX object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vizanti_msgs/srv/detail/list_executables__type_support.cpp.o[0m
+[9.061s] [ 82%] [32m[1mLinking CXX shared library libvizanti_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[9.066s] [ 83%] [32m[1mLinking CXX shared library libvizanti_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[9.210s] [ 83%] Built target vizanti_msgs__rosidl_typesupport_fastrtps_c
+[9.245s] [ 83%] Built target vizanti_msgs__rosidl_typesupport_fastrtps_cpp
+[9.449s] [ 84%] [32m[1mLinking CXX shared library libvizanti_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[9.598s] [ 84%] Built target vizanti_msgs__rosidl_typesupport_introspection_cpp
+[9.624s] [ 84%] Built target vizanti_msgs
+[9.654s] [ 85%] [34m[1mGenerating Python code for ROS interfaces[0m
+[11.346s] [ 85%] Built target vizanti_msgs__py
+[11.379s] [ 88%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_py.dir/rosidl_generator_py/vizanti_msgs/srv/_record_rosbag_s.c.o[0m
+[11.379s] [ 90%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_py.dir/rosidl_generator_py/vizanti_msgs/srv/_load_map_s.c.o[0m
+[11.379s] [ 90%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_py.dir/rosidl_generator_py/vizanti_msgs/srv/_list_packages_s.c.o[0m
+[11.380s] [ 88%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_py.dir/rosidl_generator_py/vizanti_msgs/srv/_set_node_parameter_s.c.o[0m
+[11.380s] [ 90%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_py.dir/rosidl_generator_py/vizanti_msgs/srv/_get_node_parameters_s.c.o[0m
+[11.382s] [ 92%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_py.dir/rosidl_generator_py/vizanti_msgs/srv/_manage_node_s.c.o[0m
+[11.382s] [ 92%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_py.dir/rosidl_generator_py/vizanti_msgs/srv/_save_map_s.c.o[0m
+[11.386s] [ 93%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_generator_py.dir/rosidl_generator_py/vizanti_msgs/srv/_list_executables_s.c.o[0m
+[11.630s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/vizanti_msgs/libvizanti_msgs__rosidl_generator_py.so[0m
+[11.707s] [ 94%] Built target vizanti_msgs__rosidl_generator_py
+[11.734s] [ 95%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/vizanti_msgs/_vizanti_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[11.735s] [ 96%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/vizanti_msgs/_vizanti_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[11.735s] [ 97%] [32mBuilding C object CMakeFiles/vizanti_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/vizanti_msgs/_vizanti_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[11.929s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/vizanti_msgs/vizanti_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.929s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/vizanti_msgs/vizanti_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.959s] [100%] [32m[1mLinking C shared library rosidl_generator_py/vizanti_msgs/vizanti_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[11.991s] [100%] Built target vizanti_msgs__rosidl_typesupport_introspection_c__pyext
+[11.991s] [100%] Built target vizanti_msgs__rosidl_typesupport_fastrtps_c__pyext
+[12.020s] [100%] Built target vizanti_msgs__rosidl_typesupport_c__pyext
+[12.036s] Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs' returned '0': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs -- -j12 -l12
+[12.331s] Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs
+[12.339s] -- Install configuration: ""
+[12.339s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/ament_index/resource_index/rosidl_interfaces/vizanti_msgs
+[12.340s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/GetNodeParameters.json
+[12.340s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/SetNodeParameter.json
+[12.340s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/SaveMap.json
+[12.340s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/LoadMap.json
+[12.340s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/RecordRosbag.json
+[12.340s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ManageNode.json
+[12.341s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ListPackages.json
+[12.341s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ListExecutables.json
+[12.341s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs
+[12.341s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv
+[12.341s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/save_map.h
+[12.342s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/list_executables.h
+[12.342s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/record_rosbag.h
+[12.342s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/get_node_parameters.h
+[12.342s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/list_packages.h
+[12.342s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/manage_node.h
+[12.342s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/set_node_parameter.h
+[12.342s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/load_map.h
+[12.343s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail
+[12.343s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__functions.h
+[12.343s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__functions.c
+[12.343s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__type_support.h
+[12.343s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__description.c
+[12.344s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__description.c
+[12.344s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__type_support.c
+[12.344s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__functions.h
+[12.344s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__type_support.h
+[12.344s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__functions.h
+[12.345s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__description.c
+[12.345s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__struct.h
+[12.345s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__type_support.h
+[12.345s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__struct.h
+[12.345s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__functions.c
+[12.346s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__functions.h
+[12.346s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__type_support.c
+[12.346s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__description.c
+[12.346s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__functions.h
+[12.347s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__type_support.c
+[12.347s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__functions.h
+[12.347s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__description.c
+[12.347s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__functions.h
+[12.348s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__struct.h
+[12.348s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__functions.c
+[12.349s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__functions.c
+[12.349s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__type_support.h
+[12.349s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__struct.h
+[12.349s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__functions.c
+[12.349s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__functions.c
+[12.349s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__type_support.c
+[12.349s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__type_support.c
+[12.350s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__type_support.h
+[12.350s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__description.c
+[12.350s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__struct.h
+[12.350s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__description.c
+[12.350s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__type_support.c
+[12.351s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__type_support.h
+[12.351s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__struct.h
+[12.351s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__type_support.h
+[12.351s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__description.c
+[12.351s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__type_support.h
+[12.351s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__functions.c
+[12.352s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__struct.h
+[12.352s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__functions.c
+[12.352s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__struct.h
+[12.352s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__type_support.c
+[12.352s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__type_support.c
+[12.353s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__functions.h
+[12.353s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/msg
+[12.353s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/msg/rosidl_generator_c__visibility_control.h
+[12.353s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/environment/library_path.sh
+[12.353s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/environment/library_path.dsv
+[12.354s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_generator_c.so
+[12.355s] -- Set runtime path of "/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_generator_c.so" to ""
+[12.355s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs
+[12.355s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv
+[12.355s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail
+[12.355s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__rosidl_typesupport_fastrtps_c.h
+[12.355s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__rosidl_typesupport_fastrtps_c.h
+[12.356s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__rosidl_typesupport_fastrtps_c.h
+[12.356s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__rosidl_typesupport_fastrtps_c.h
+[12.356s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__rosidl_typesupport_fastrtps_c.h
+[12.356s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__rosidl_typesupport_fastrtps_c.h
+[12.356s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__rosidl_typesupport_fastrtps_c.h
+[12.356s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__rosidl_typesupport_fastrtps_c.h
+[12.356s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/msg
+[12.357s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[12.357s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_typesupport_fastrtps_c.so
+[12.357s] -- Set runtime path of "/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[12.358s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs
+[12.358s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv
+[12.358s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail
+[12.358s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__rosidl_typesupport_introspection_c.h
+[12.358s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__rosidl_typesupport_introspection_c.h
+[12.358s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__type_support.c
+[12.358s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__type_support.c
+[12.358s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__type_support.c
+[12.359s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__rosidl_typesupport_introspection_c.h
+[12.359s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__rosidl_typesupport_introspection_c.h
+[12.359s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__rosidl_typesupport_introspection_c.h
+[12.359s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__rosidl_typesupport_introspection_c.h
+[12.359s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__type_support.c
+[12.359s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__type_support.c
+[12.360s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__type_support.c
+[12.360s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__rosidl_typesupport_introspection_c.h
+[12.360s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__rosidl_typesupport_introspection_c.h
+[12.360s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__type_support.c
+[12.361s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__type_support.c
+[12.361s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/msg
+[12.361s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[12.361s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_typesupport_introspection_c.so
+[12.362s] -- Set runtime path of "/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_typesupport_introspection_c.so" to ""
+[12.362s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_typesupport_c.so
+[12.362s] -- Set runtime path of "/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_typesupport_c.so" to ""
+[12.362s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs
+[12.362s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv
+[12.363s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/list_executables.hpp
+[12.363s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/record_rosbag.hpp
+[12.363s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/manage_node.hpp
+[12.363s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/list_packages.hpp
+[12.363s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/set_node_parameter.hpp
+[12.363s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/load_map.hpp
+[12.363s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/get_node_parameters.hpp
+[12.364s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/save_map.hpp
+[12.364s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail
+[12.364s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__builder.hpp
+[12.364s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__struct.hpp
+[12.364s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__builder.hpp
+[12.364s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__builder.hpp
+[12.364s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__struct.hpp
+[12.365s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__builder.hpp
+[12.365s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__struct.hpp
+[12.365s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__traits.hpp
+[12.365s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__traits.hpp
+[12.365s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__struct.hpp
+[12.366s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__traits.hpp
+[12.366s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__traits.hpp
+[12.366s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__traits.hpp
+[12.366s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__struct.hpp
+[12.366s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__builder.hpp
+[12.367s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__traits.hpp
+[12.367s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__traits.hpp
+[12.367s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__builder.hpp
+[12.368s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__struct.hpp
+[12.368s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__struct.hpp
+[12.368s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__traits.hpp
+[12.368s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__builder.hpp
+[12.368s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__builder.hpp
+[12.368s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__struct.hpp
+[12.369s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs
+[12.369s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv
+[12.369s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail
+[12.369s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__rosidl_typesupport_fastrtps_cpp.hpp
+[12.369s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/dds_fastrtps
+[12.369s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__rosidl_typesupport_fastrtps_cpp.hpp
+[12.370s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__rosidl_typesupport_fastrtps_cpp.hpp
+[12.370s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__rosidl_typesupport_fastrtps_cpp.hpp
+[12.370s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__rosidl_typesupport_fastrtps_cpp.hpp
+[12.370s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__rosidl_typesupport_fastrtps_cpp.hpp
+[12.370s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__rosidl_typesupport_fastrtps_cpp.hpp
+[12.371s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__rosidl_typesupport_fastrtps_cpp.hpp
+[12.371s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/msg
+[12.371s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[12.371s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_typesupport_fastrtps_cpp.so
+[12.373s] -- Set runtime path of "/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[12.373s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs
+[12.373s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv
+[12.373s] -- Up-to-date: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail
+[12.373s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__rosidl_typesupport_introspection_cpp.hpp
+[12.373s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__rosidl_typesupport_introspection_cpp.hpp
+[12.374s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__rosidl_typesupport_introspection_cpp.hpp
+[12.374s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_executables__type_support.cpp
+[12.374s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__type_support.cpp
+[12.374s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__type_support.cpp
+[12.374s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/list_packages__rosidl_typesupport_introspection_cpp.hpp
+[12.375s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__type_support.cpp
+[12.375s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__rosidl_typesupport_introspection_cpp.hpp
+[12.375s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__rosidl_typesupport_introspection_cpp.hpp
+[12.375s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/load_map__type_support.cpp
+[12.375s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/manage_node__type_support.cpp
+[12.376s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/save_map__rosidl_typesupport_introspection_cpp.hpp
+[12.376s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/get_node_parameters__type_support.cpp
+[12.376s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/record_rosbag__type_support.cpp
+[12.376s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/include/vizanti_msgs/vizanti_msgs/srv/detail/set_node_parameter__rosidl_typesupport_introspection_cpp.hpp
+[12.376s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_typesupport_introspection_cpp.so
+[12.378s] -- Set runtime path of "/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[12.378s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_typesupport_cpp.so
+[12.380s] -- Set runtime path of "/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_typesupport_cpp.so" to ""
+[12.380s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/environment/pythonpath.sh
+[12.380s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/environment/pythonpath.dsv
+[12.380s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs-0.1.0-py3.10.egg-info
+[12.380s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[12.380s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[12.381s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[12.381s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[12.381s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs
+[12.381s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv
+[12.381s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_set_node_parameter.py
+[12.382s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_record_rosbag_s.c
+[12.382s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_record_rosbag.py
+[12.382s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_load_map.py
+[12.382s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_save_map.py
+[12.382s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_get_node_parameters.py
+[12.382s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_list_executables_s.c
+[12.383s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_get_node_parameters_s.c
+[12.383s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_manage_node.py
+[12.383s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_list_packages.py
+[12.383s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_list_packages_s.c
+[12.384s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_set_node_parameter_s.c
+[12.384s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_list_executables.py
+[12.384s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_load_map_s.c
+[12.384s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/__init__.py
+[12.385s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_manage_node_s.c
+[12.385s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_save_map_s.c
+[12.385s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/libvizanti_msgs__rosidl_generator_py.so
+[12.385s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/vizanti_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.386s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/_vizanti_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[12.386s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/vizanti_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.387s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/vizanti_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.387s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/_vizanti_msgs_s.ep.rosidl_typesupport_c.c
+[12.387s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/_vizanti_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[12.388s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/__init__.py
+[12.442s] Listing '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs'...
+[12.442s] Compiling '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/__init__.py'...
+[12.443s] Listing '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv'...
+[12.443s] Compiling '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/__init__.py'...
+[12.443s] Compiling '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_get_node_parameters.py'...
+[12.443s] Compiling '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_list_executables.py'...
+[12.443s] Compiling '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_list_packages.py'...
+[12.443s] Compiling '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_load_map.py'...
+[12.443s] Compiling '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_manage_node.py'...
+[12.443s] Compiling '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_record_rosbag.py'...
+[12.443s] Compiling '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_save_map.py'...
+[12.443s] Compiling '/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/srv/_set_node_parameter.py'...
+[12.447s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/vizanti_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[12.448s] -- Set runtime path of "/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/vizanti_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.448s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/vizanti_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[12.449s] -- Set runtime path of "/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/vizanti_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.449s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/vizanti_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[12.450s] -- Set runtime path of "/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/python3.10/site-packages/vizanti_msgs/vizanti_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[12.450s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_generator_py.so
+[12.451s] -- Set runtime path of "/home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/lib/libvizanti_msgs__rosidl_generator_py.so" to ""
+[12.451s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/GetNodeParameters.idl
+[12.451s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/SetNodeParameter.idl
+[12.451s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/SaveMap.idl
+[12.452s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/LoadMap.idl
+[12.452s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/RecordRosbag.idl
+[12.452s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ManageNode.idl
+[12.452s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ListPackages.idl
+[12.453s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ListExecutables.idl
+[12.453s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/GetNodeParameters.srv
+[12.453s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/GetNodeParameters_Request.msg
+[12.453s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/GetNodeParameters_Response.msg
+[12.454s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/SetNodeParameter.srv
+[12.454s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/SetNodeParameter_Request.msg
+[12.454s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/SetNodeParameter_Response.msg
+[12.454s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/SaveMap.srv
+[12.454s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/SaveMap_Request.msg
+[12.455s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/SaveMap_Response.msg
+[12.455s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/LoadMap.srv
+[12.455s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/LoadMap_Request.msg
+[12.455s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/LoadMap_Response.msg
+[12.456s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/RecordRosbag.srv
+[12.456s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/RecordRosbag_Request.msg
+[12.456s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/RecordRosbag_Response.msg
+[12.456s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ManageNode.srv
+[12.457s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ManageNode_Request.msg
+[12.457s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ManageNode_Response.msg
+[12.457s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ListPackages.srv
+[12.457s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ListPackages_Request.msg
+[12.458s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ListPackages_Response.msg
+[12.458s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ListExecutables.srv
+[12.458s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ListExecutables_Request.msg
+[12.458s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/srv/ListExecutables_Response.msg
+[12.459s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/ament_index/resource_index/package_run_dependencies/vizanti_msgs
+[12.459s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/ament_index/resource_index/parent_prefix_path/vizanti_msgs
+[12.459s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/environment/ament_prefix_path.sh
+[12.459s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/environment/ament_prefix_path.dsv
+[12.460s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/environment/path.sh
+[12.460s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/environment/path.dsv
+[12.460s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/local_setup.bash
+[12.460s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/local_setup.sh
+[12.460s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/local_setup.zsh
+[12.461s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/local_setup.dsv
+[12.461s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/package.dsv
+[12.461s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/ament_index/resource_index/packages/vizanti_msgs
+[12.461s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/export_vizanti_msgs__rosidl_generator_cExport.cmake
+[12.462s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/export_vizanti_msgs__rosidl_generator_cExport-noconfig.cmake
+[12.462s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/export_vizanti_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[12.462s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/export_vizanti_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[12.462s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/vizanti_msgs__rosidl_typesupport_introspection_cExport.cmake
+[12.463s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/vizanti_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[12.463s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/vizanti_msgs__rosidl_typesupport_cExport.cmake
+[12.463s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/vizanti_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[12.464s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/export_vizanti_msgs__rosidl_generator_cppExport.cmake
+[12.464s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/export_vizanti_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[12.464s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/export_vizanti_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[12.464s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/vizanti_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[12.465s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/vizanti_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[12.465s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/vizanti_msgs__rosidl_typesupport_cppExport.cmake
+[12.465s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/vizanti_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[12.466s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/export_vizanti_msgs__rosidl_generator_pyExport.cmake
+[12.466s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/export_vizanti_msgs__rosidl_generator_pyExport-noconfig.cmake
+[12.466s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/rosidl_cmake-extras.cmake
+[12.466s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.467s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.467s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[12.467s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[12.468s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[12.468s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[12.468s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/vizanti_msgsConfig.cmake
+[12.468s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/cmake/vizanti_msgsConfig-version.cmake
+[12.469s] -- Installing: /home/ferre/brick/BRICK-WEBots/install/vizanti_msgs/share/vizanti_msgs/package.xml
+[12.472s] Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs' returned '0': CMAKE_PREFIX_PATH=/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick:/opt/ros/iron /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs

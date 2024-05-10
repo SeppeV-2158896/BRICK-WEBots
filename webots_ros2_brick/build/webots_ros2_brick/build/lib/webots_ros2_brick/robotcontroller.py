@@ -57,10 +57,6 @@ class MyRobotDriver():
         self.cmd_vel_subscriber = self.node.create_subscription(
             Twist, '/cmd_vel', self.cmdVel_callback, 1)
         
-        self.goal_subscriber = self.node.create_subscription(
-            Vector3, '/goal', self.goal_callback,1)
-        # self.emergency_stop = self.node.create_subscription(
-        #    bool, '/emergency_stop', self.emergencyStop_callback, 1)
         
         # Create Lidar subscriber
         self.lidar_sensor = self.robot.getDevice('lidar')
@@ -139,12 +135,12 @@ class MyRobotDriver():
 
         self.x += v * cos(self.prev_angle)*time_diff_s
         self.y += v * sin(self.prev_angle)*time_diff_s
-        self.th += -omega*time_diff_s
+        self.th = -self.imu.getRollPitchYaw()[2]
 
 
-        orientation = self.imu.getRollPitchYaw()[2]
+        #orientation = -self.imu.getRollPitchYaw()[2]
 
-        self.node.get_logger().info(str(orientation))
+        #self.node.get_logger().info(str(orientation))
 
         # Reset section
         self.prev_angle = self.th
@@ -153,7 +149,7 @@ class MyRobotDriver():
         self.last_time = self.robot.getTime()
 
         # since all odometry is 6DOF we'll need a quaternion created from yaw
-        odomq=quaternion_from_euler(0.0, 0.0, orientation)
+        odomq=quaternion_from_euler(0.0, 0.0, self.th)
 
         # first, we'll publish the transform over tf
         odom_transform = TransformStamped()
@@ -210,9 +206,11 @@ class MyRobotDriver():
 
 
     def cmdVel_callback(self, msg):
+        
         self.vx = msg.linear.x
         self.vth = msg.angular.z
-        #msg.angular.z = - msg.angular.z
+        self.node.get_logger().info(str(self.vx) + "  " + str(self.vth))
+        #msg.angular.z = - msg.angular.z 
         #self.node.get_logger().info("speeds"  + str(msg.linear.x) + " " + str(msg.angular.z))
         left_speed = msg.linear.x - (2* msg.angular.z)/self.wheel_gap
         right_speed = msg.linear.x + (2* msg.angular.z)/self.wheel_gap
@@ -228,10 +226,6 @@ class MyRobotDriver():
 
         self.left_motor.setVelocity(left_speed)
         self.right_motor.setVelocity(right_speed)
-
-    def emergencyStop_callback(self, msg):
-        self.node.destroy_node()
-        rclpy.shutdown()
 
     def laser_pub(self):
         try:

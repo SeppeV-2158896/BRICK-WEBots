@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "vizanti_msgs/srv/ManageNode_Request",
+      "fields": [
+        {
+          "name": "node",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "vizanti_msgs/srv/ManageNode_Request",
+      "hash_string": "RIHS01_105bca97af14db83e2b426e817c8752da0b603bde8a8388d9ad546fcceb91303"
+    }
+  ]
+}

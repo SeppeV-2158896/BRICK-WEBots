@@ -53,7 +53,7 @@ class mqtt_videostream(Node):
         image_base64 = base64.b64encode(buffer)
         
         self.client.publish("videostream", image_base64)
-        self.get_logger().info("Image send")
+        #self.get_logger().info("Image send")
 
     def __del__(self):
         self.get_logger().info("stopping mqtt")

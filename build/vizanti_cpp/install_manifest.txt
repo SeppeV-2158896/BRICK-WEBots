@@ -1,0 +1,16 @@
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/lib/vizanti_cpp/tf_consolidator
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/ament_index/resource_index/package_run_dependencies/vizanti_cpp
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/ament_index/resource_index/parent_prefix_path/vizanti_cpp
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/environment/ament_prefix_path.sh
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/environment/ament_prefix_path.dsv
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/environment/path.sh
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/environment/path.dsv
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/local_setup.bash
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/local_setup.sh
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/local_setup.zsh
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/local_setup.dsv
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/package.dsv
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/ament_index/resource_index/packages/vizanti_cpp
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/cmake/vizanti_cppConfig.cmake
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/cmake/vizanti_cppConfig-version.cmake
+/home/ferre/brick/BRICK-WEBots/install/vizanti_cpp/share/vizanti_cpp/package.xml

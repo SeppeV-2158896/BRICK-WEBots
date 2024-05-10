@@ -1,0 +1,22 @@
+{
+  "package_name": "vizanti_msgs",
+  "output_dir": "/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs/rosidl_generator_type_description/vizanti_msgs",
+  "idl_tuples": [
+    "/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs/rosidl_adapter/vizanti_msgs:srv/GetNodeParameters.idl",
+    "/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs/rosidl_adapter/vizanti_msgs:srv/SetNodeParameter.idl",
+    "/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs/rosidl_adapter/vizanti_msgs:srv/SaveMap.idl",
+    "/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs/rosidl_adapter/vizanti_msgs:srv/LoadMap.idl",
+    "/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs/rosidl_adapter/vizanti_msgs:srv/RecordRosbag.idl",
+    "/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs/rosidl_adapter/vizanti_msgs:srv/ManageNode.idl",
+    "/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs/rosidl_adapter/vizanti_msgs:srv/ListPackages.idl",
+    "/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs/rosidl_adapter/vizanti_msgs:srv/ListExecutables.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/iron/share/std_msgs",
+    "builtin_interfaces:/opt/ros/iron/share/builtin_interfaces",
+    "nav_msgs:/opt/ros/iron/share/nav_msgs",
+    "geometry_msgs:/opt/ros/iron/share/geometry_msgs",
+    "service_msgs:/opt/ros/iron/share/service_msgs",
+    "actionlib_msgs:/opt/ros/iron/share/actionlib_msgs"
+  ]
+}

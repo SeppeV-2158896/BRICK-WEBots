@@ -1,0 +1,13 @@
+{
+  "package_name": "vizanti_msgs",
+  "non_idl_tuples": [
+    "/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs:srv/GetNodeParameters.srv",
+    "/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs:srv/SetNodeParameter.srv",
+    "/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs:srv/SaveMap.srv",
+    "/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs:srv/LoadMap.srv",
+    "/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs:srv/RecordRosbag.srv",
+    "/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs:srv/ManageNode.srv",
+    "/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs:srv/ListPackages.srv",
+    "/home/ferre/brick/BRICK-WEBots/vizanti/src/vizanti/vizanti_msgs:srv/ListExecutables.srv"
+  ]
+}
