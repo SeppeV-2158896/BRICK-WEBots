@@ -1,0 +1,47 @@
+:root {
+    --cam-width: 600px;
+}
+
+.camera-container {
+    position: relative;
+    width: var(--cam-width);
+    height: calc(var(--cam-width)*3/4);
+    left: 10px;
+    border: 2px solid black;
+}
+
+.map-container {
+    padding-left: 10px;
+}
+
+.map {
+    width: var(--cam-width);
+    height: calc(var(--cam-width)*3/4);
+}
+
+.container-map-input-fields {
+    position: relative;
+    left: var(--cam-width);
+}
+
+.container-input{
+    padding: 10px;
+}
+
+.bottom-left-container {
+    position: absolute;
+    z-index: 100;
+    bottom: 5px;
+}
+
+.bottom-right-container {
+    position: absolute;
+    z-index: 100;
+    right: 5px;
+    bottom: 5px;
+}
+
+.cam-map-container {
+    display: flex;
+    flex-wrap: wrap;
+}
