@@ -5,7 +5,7 @@ from geometry_msgs.msg import PoseStamped, Twist
 from rclpy.duration import Duration
 from nav_msgs.msg import Odometry, Path
 import math
-
+from tf_transformations import euler_from_quaternion, quaternion_from_euler
 
 class PIDController:
     def __init__(self, p_gain, i_gain, d_gain, delta_t):
@@ -70,10 +70,9 @@ class navigation(Node):
             self.get_logger().info("path")
             self.path = path_msg.poses
             self.path_queue = [(pose.pose.position.x, pose.pose.position.y) for pose in self.path]
-            self.path_queue = [self.path_queue[-1]]
-            """self.path_queue.pop(0)
-            self.path_queue.pop(1)
-            self.path_queue.pop(2)"""
+            if len(self.path_queue) > 5:
+                self.path_queue = self.path_queue[5:]
+
             self.get_logger().info(str(len(self.path_queue)))
 
     def odom_callback(self, odom_msg):
@@ -93,7 +92,9 @@ class navigation(Node):
             robot_orientation = odom.pose.pose.orientation
             orientation = robot_orientation.z
             self.goal_position = self.path_queue[0]
-            if abs(self.calculate_position_error(self.path_queue[-1],position)) < 0.05:
+            roll,pitch,yaw = euler_from_quaternion((robot_orientation.x,robot_orientation.y,robot_orientation.z,robot_orientation.w))
+            
+            if abs(self.calculate_position_error(self.path_queue[-1],position)) < 0.2:
                 self.path_queue = []
                 self.get_logger().info("goal reached!")
                 cmd_vel_msg = Twist()
@@ -110,22 +111,30 @@ class navigation(Node):
             
             y_diff = self.goal_position[1] - position[1]
             x_diff = self.goal_position[0] - position[0] 
+            yaw = yaw
             goal_orientation = math.atan2(y_diff, x_diff)
+            if abs(goal_orientation - yaw) > 22/7:
+                if goal_orientation > yaw:
+                    goal_orientation -= 2 * math.pi
+                else:
+                    goal_orientation += 2 * math.pi
 
 
-            self.get_logger().info(str(orientation))
-            self.orientation_pid.set_goal(goal_orientation, orientation)
-            self.orientation_pid.set_current_value(orientation)
+            self.get_logger().info("yaw: " + str(yaw) + " goal or: " + str(goal_orientation))
+
+            #self.get_logger().info(str(orientation))
+            self.orientation_pid.set_goal(goal_orientation, yaw)
+            self.orientation_pid.set_current_value(yaw)
             orientation_command = self.orientation_pid.get_command()
             self.get_logger().info("or command: " + str(orientation_command) + "  pos command: " + str(position_command))
             linvel = 0.0
             angularvel = orientation_command  
             angularvel = (angularvel*(22/7))/180
             if abs(position_command) > 0.05:
-                linvel += 0.05
+                linvel += 0.2
             
             self.get_logger().info(str(self.position_pid.error) + "   " + str(self.orientation_pid.error)) 
-            if math.fabs(self.position_pid.error) < 0.05:# and math.fabs(position_pid.error[1]) < 0.01:
+            if math.fabs(self.position_pid.error) < 0.15:# and math.fabs(position_pid.error[1]) < 0.01:
                 self.get_logger().info("Here!")
                 position_goal_set = False
                 if(len(self.path_queue) > 0):
