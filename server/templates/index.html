@@ -21,12 +21,19 @@
         <h1>BRICK</h1>
       </div>
 
-      <div class="container-connect-vizanti">
-        <input id="host" type="text" size="40"/>
-        <input id="port" type="text" size="40"/>
-        <button id="connectVizanti" onclick="connectVizanti()">Connect</button>
+      <div class="container-map-input-fields">
+        <div class="container-input">
+          <input id="host" type="text" placeholder="host" size="20"/>
+          <input id="port" type="text" placeholder="port" size="20"/>
+          <button id="connectVizanti" onclick="connectVizanti()">Connect</button>
+        </div>
+        <div class="container-input">
+          <input id="x" type="text" placeholder="x-coordinate" size="20"/>
+          <input id="y" type="text" placeholder="y-coordinate" size="20"/>
+          <button id="sendGoalPos" onclick="sendGoalPos()">Send</button>
+        </div>
       </div>
-      
+
       <div class="cam-map-container">
         <div class="camera-container">          
           <img id="cameraView" src="" alt="camera" class="map"/>
@@ -52,8 +59,8 @@
           <iframe id="vizanti" src="" class="map"></iframe>
         </div>
       </div>
-      <!-- <img id="cameraView" src="" alt="camera"/> -->
+      
 
-      <!-- <iframe id="vizanti" src="" width="800" height="600"></iframe>      -->
+
   </body>
 </html>

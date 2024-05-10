@@ -19,7 +19,12 @@
     height: calc(var(--cam-width)*3/4);
 }
 
-.container-connect-vizanti{
+.container-map-input-fields {
+    position: relative;
+    left: var(--cam-width);
+}
+
+.container-input{
     padding: 10px;
 }
 

@@ -43,6 +43,22 @@ function onMessageArrived(message) {
     }
 }
 
+function sendGoalPos() {
+    var x = document.getElementById("x").value;
+    var y = document.getElementById("y").value;
+
+    try{
+        x = parseFloat(x);
+        y = parseFloat(y);
+    } catch(error){
+        console.error('Error:', error);
+        return
+    }
+
+    var data = x + "-" + y;
+    sendData(data, "goal");
+}
+
 function sendData(data, topic) {
     var message = new Paho.MQTT.Message(data);
     message.qos = 2;
