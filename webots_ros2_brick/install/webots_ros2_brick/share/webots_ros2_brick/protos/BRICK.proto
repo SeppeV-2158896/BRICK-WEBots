@@ -450,10 +450,10 @@ PROTO BRICK [
         width        640
         height       480
       }
-      Mpu-9250 {
-        translation   -0.1 0 0.05
-        rotation      0 0 1 1.57
-        name          "MPU-9250"
+      InertialUnit {
+        translation -0.1 0 0.05
+        rotation 0 0 1 0
+        name "imu"  
       }
     ]
     boundingObject USE BODY

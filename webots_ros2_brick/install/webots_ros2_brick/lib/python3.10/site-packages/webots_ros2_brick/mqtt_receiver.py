@@ -19,8 +19,6 @@ class mqtt_receiver(Node):
         self.client.on_message = self.on_message
         self.client.connect("2a144db8513740369fedfc9de40e179b.s1.eu.hivemq.cloud", 8884, 60)
         self.client.loop_start()
-        self.cmd_vel_subscriber = self.create_subscription(
-            Twist, '/cmd_vel', self.sendmessage, 1)
         
 
     def on_connect(self, client, userdata, flags, rc):
@@ -28,9 +26,7 @@ class mqtt_receiver(Node):
 
     def on_message(self, client, userdata, message):
         self.get_logger().info("Received message: "+str(message.payload.decode()))
-    def sendmessage(self,msg):
-        self.client.publish("hihi",1,0,0)
-        self.get_logger().info("heh")
+
 
 
 

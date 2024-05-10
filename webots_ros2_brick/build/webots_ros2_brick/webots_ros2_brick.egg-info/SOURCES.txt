@@ -17,8 +17,11 @@ protos/Hoap2.proto
 resource/brick.urdf
 resource/webots_ros2_brick
 webots_ros2_brick/__init__.py
+webots_ros2_brick/controllertype.py
 webots_ros2_brick/mqtt_receiver.py
 webots_ros2_brick/navigation.py
+webots_ros2_brick/othercontroller.py
+webots_ros2_brick/otherlaunch.py
 webots_ros2_brick/robotcontroller.py
 worlds/test_environment.wbt
 worlds/turtlebot3_burger_example.wbt
