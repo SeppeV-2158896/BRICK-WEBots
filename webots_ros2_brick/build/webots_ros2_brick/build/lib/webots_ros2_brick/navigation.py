@@ -70,8 +70,8 @@ class navigation(Node):
             self.get_logger().info("path")
             self.path = path_msg.poses
             self.path_queue = [(pose.pose.position.x, pose.pose.position.y) for pose in self.path]
-            if len(self.path_queue) > 10:
-                self.path_queue = self.path_queue[10:]
+            if len(self.path_queue) > 5:
+                self.path_queue = self.path_queue[5:]
 
             self.get_logger().info(str(len(self.path_queue)))
 

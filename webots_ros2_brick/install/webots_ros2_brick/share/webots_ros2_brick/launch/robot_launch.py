@@ -72,7 +72,7 @@ def generate_launch_description():
     return LaunchDescription([
         #rviz,
         webots,
-        mqtt_node,
+        #mqtt_node,
         navigation_node,
         my_robot_driver,
         mqtt_receiver_node,

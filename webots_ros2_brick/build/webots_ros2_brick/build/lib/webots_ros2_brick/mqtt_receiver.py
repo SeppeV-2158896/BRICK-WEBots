@@ -1,134 +1,53 @@
+
+
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from std_msgs.msg import Float64
 import paho.mqtt.client as mqtt
 # from webots_ros2_core.webots_node import WebotsNode
-import paho.mqtt.client as mqtt
+
+
+
 
 class mqtt_receiver(Node):
     def __init__(self):
-        super().__init__('mqtt_receiver_node')
-
-        self.cmd_vel_pub = self.create_publisher(Twist,"cmd_vel",1)
-        # self.emergency_stop_pub = self.create_publisher(bool, "emergency_stop",1)
-
-        self.movement = {
-            "forward": False,
-            "backward": False,
-            "left": False,
-            "right": False
-        }
-
-        broker_address = "2a144db8513740369fedfc9de40e179b.s1.eu.hivemq.cloud"
-        port = 8883
-        username = "BRICK"
-        password = "FristiBRICK03"
-
-        # MQTT client setup
-        self.client = mqtt.Client(callback_api_version=mqtt.CallbackAPIVersion.VERSION2)
-        self.client.tls_set(tls_version=mqtt.ssl.PROTOCOL_TLS)
-        self.client.username_pw_set(username, password)
-
+        super().__init__('mqtt_handler')
+        self.get_logger().info("init client")
+        self.client = mqtt.Client() 
         self.client.on_connect = self.on_connect
         self.client.on_message = self.on_message
-        self.client.on_connect_fail = self.on_connect_fail
-
-        # Connect to MQTT broker
-        self.client.connect(broker_address, port=port, clean_start=mqtt.MQTT_CLEAN_START_FIRST_ONLY, keepalive=60)
-        self.get_logger().info("Connecting to broker...")
-
-        # Start the MQTT loop
-        self.get_logger().info("MQTT loop started...")
+        self.client.connect("2a144db8513740369fedfc9de40e179b.s1.eu.hivemq.cloud", 8884, 60)
         self.client.loop_start()
+        
 
-    def on_connect(self, client, userdata, flags, rc, properties):
-        self.get_logger().info("Connected to MQTT broker")
+    def on_connect(self, client, userdata, flags, rc):
+        self.get_logger().info("Connected with result code "+str(rc))
 
-        self.client.subscribe("movement")
-        self.client.subscribe("emergencyStop")
+    def on_message(self, client, userdata, message):
+        self.get_logger().info("Received message: "+str(message.payload.decode()))
 
-        self.get_logger().info("Subscribed to topics: movement, emergencyStop")
 
-    def on_connect_fail(self, client, userdata, rc):
-        self.get_logger().info("Failed to connect to MQTT broker")
 
-    def on_message(self, client, userdata, msg):
-        self.get_logger().info("Received message: " + msg.payload.decode())
-        topic = msg.topic
-        data = msg.payload.decode()
-        # TODO set movement with twist method
-        if topic == "movement":
-            data_split = data.split("_")
-            direction = data_split[0]
-            key_action = data_split[1]
 
-            if key_action == "up":
-                self.movement[direction] = False
-            elif key_action == "down":
-                self.movement[direction] = True
+    def publish_cmd_vel(self):
+        pass
 
-            twist = self.calculateMovement()
-            self.cmd_vel_pub.publish(twist)
-        elif topic == "emergencyStop":
-            # TODO implement emergency stop
-            # self.emergency_stop_pub.publish(True)
-            self.get_logger().info("Stop not yet implemented")
-            pass
 
-    def calculateMovement(self):
-        forward = self.movement["forward"]
-        backward = self.movement["backward"]
-        left = self.movement["left"]
-        right = self.movement["right"]
 
-        lin = 0
-        if forward == backward:
-            pass
-        elif forward:
-            lin = 1
-        elif backward:
-            lin = -1
 
-        rot = 0
-        if left == right:
-            pass
-        elif left:
-            rot = 1
-        elif right:
-            rot = -1
 
-        speed = 0.75
-        turn = 0.1
-
-        twist = Twist()
-        twist.linear.x = float(lin * speed)
-        twist.angular.z = float(rot * turn)
-
-        twist.linear.y = 0.
-        twist.linear.z = 0.
-        twist.angular.x = 0.
-        twist.angular.y = 0.
-
-        return twist
-
-    def __del__(self):
-        self.get_logger().info("stopping mqtt")
-        self.client.loop_stop()
-        self.client.disconnect()
 
 def main(args=None):
     rclpy.init(args=args)
-    #node = rclpy.create_node('mqtt_receiver_node')
+    try:
+        relay_ros2_mqtt = mqtt_receiver()
+        rclpy.spin(relay_ros2_mqtt)
+    except rclpy.exceptions.ROSInterruptException:
+        pass
 
-    mqtt_client = mqtt_receiver()
-
-    rclpy.spin(mqtt_client)
-
-    mqtt_client.destroy_node()
+    relay_ros2_mqtt .destroy_node()
     rclpy.shutdown()
-
-    
 
 
 if __name__ == '__main__':
