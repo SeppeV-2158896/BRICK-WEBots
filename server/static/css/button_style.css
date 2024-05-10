@@ -1,5 +1,5 @@
 :root {
-    --arrow-button-size: 75px;
+    --arrow-button-size: 50px;
     --arrow-button-margin: 5px;
 }
 
@@ -24,9 +24,4 @@
     color: white;
     font-size: calc(var(--arrow-button-size) / 3.75);
     cursor: pointer;
-    margin-left: auto;
-    align-self: flex-start;
-    position: absolute;
-    top: 70px;
-    left: calc(3 * var(--arrow-button-size) + 2 * 3 * var(--arrow-button-margin) + 10px); /* hier kunnen we nog mee spelen, voorlopig zo */
 }
