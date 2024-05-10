@@ -23,9 +23,14 @@ def generate_launch_description():
         ]
     )
 
-    mqtt_node = Node(
+    mqtt_receiver_node = Node(
         package='webots_ros2_brick',
         executable='mqtt_handler',
+    )
+
+    mqtt_videostream_node = Node(
+        package='webots_ros2_brick',
+        executable='mqtt_videostream',
     )
 
     navigation_node = Node(
@@ -67,7 +72,11 @@ def generate_launch_description():
     return LaunchDescription([
         #rviz,
         webots,
+        #mqtt_node,
+        navigation_node,
         my_robot_driver,
+        mqtt_receiver_node,
+        mqtt_videostream_node,
         #control_node,
         #nav2_launch,
         #slam_toolbox_launch,
@@ -78,5 +87,4 @@ def generate_launch_description():
             )
         ),
         #navigation_node#,
-        #mqtt_node
     ])

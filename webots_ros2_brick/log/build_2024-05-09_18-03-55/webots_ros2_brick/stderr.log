@@ -1,0 +1,5 @@
+  File "/home/ferre/brick/BRICK-WEBots/webots_ros2_brick/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick/navigation.py", line 89
+    self.position_pid.set_goal(0, self.calculate_position_error(self.goal_position, positio n))
+                                                                                    ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+

@@ -4,7 +4,6 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
 EXTERNPROTO "../protos/BRICK.proto"
-EXTERNPROTO "../protos/Hoap2.proto"
 
 WorldInfo {
 }
@@ -18,9 +17,6 @@ TexturedBackgroundLight {
 }
 RectangleArena {
   floorSize 10 10
-}
-Hoap2 {
-  translation 1.04 0 0.29
 }
 Pose {
   children [
@@ -40,6 +36,6 @@ Pose {
   ]
 }
 BRICK {
-  translation 0 1.07 0.2
+  translation 1.07 0 0.2
   controller "robot_controller"
 }

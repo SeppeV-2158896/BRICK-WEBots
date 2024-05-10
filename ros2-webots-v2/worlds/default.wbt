@@ -677,5 +677,5 @@ OfficeChair {
   name "office chair(5)"
 }
 BRICK {
-  translation 0 0 1
+  translation 0 0 0.2
 }
