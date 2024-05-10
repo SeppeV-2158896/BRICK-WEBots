@@ -1,7 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Twist
-from std_msgs.msg import Float64
+from geometry_msgs.msg import Twist, PoseStamped
 # from webots_ros2_core.webots_node import WebotsNode
 import paho.mqtt.client as mqtt
 
@@ -9,7 +8,8 @@ class mqtt_receiver(Node):
     def __init__(self):
         super().__init__('mqtt_receiver_node')
 
-        self.cmd_vel_pub = self.create_publisher(Twist,"cmd_vel",1)
+        self.cmd_vel_pub = self.create_publisher(Twist,"cmd_vel", 1)
+        self.goal_pub = self.create_publisher(PoseStamped, "goal_pose", 1)
         # self.emergency_stop_pub = self.create_publisher(bool, "emergency_stop",1)
 
         self.movement = {
@@ -74,6 +74,18 @@ class mqtt_receiver(Node):
             # self.emergency_stop_pub.publish(True)
             self.get_logger().info("Stop not yet implemented")
             pass
+        elif topic == "goal":
+            data_split = data.split("-")
+            x = data_split[0]
+            y = data_split[1]
+
+            poseStamped = PoseStamped()
+            poseStamped.header.frame_id = 'map'
+            poseStamped.header.stamp = self.get_clock().now().to_msg()
+            poseStamped.pose.position.x = float(x)
+            poseStamped.pose.position.y = float(y)
+
+            self.goal_pub.publish(poseStamped)
 
     def calculateMovement(self):
         forward = self.movement["forward"]
