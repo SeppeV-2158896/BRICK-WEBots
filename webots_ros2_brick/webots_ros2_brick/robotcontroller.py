@@ -12,7 +12,7 @@ from tf_transformations import euler_from_quaternion, quaternion_from_euler
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import Point, Pose, Quaternion, Twist, Vector3, PoseStamped
 from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
-
+from std_msgs.msg import Bool
 
 
 
@@ -56,7 +56,8 @@ class MyRobotDriver():
         # Create Subscriber
         self.cmd_vel_subscriber = self.node.create_subscription(
             Twist, '/cmd_vel', self.cmdVel_callback, 1)
-        
+        self.emergency_stop = self.node.create_subscription(
+            Bool, '/emergency_stop', self.emergencyStop_callback, 1)
         
         # Create Lidar subscriber
         self.lidar_sensor = self.robot.getDevice('lidar')
@@ -174,6 +175,12 @@ class MyRobotDriver():
 
         # publish the message
         self.odom_pub.publish(odom)
+
+    def emergencyStop_callback(self, msg):
+        speed = Twist()
+        speed.linear.x = 0.0
+        speed.angular.z = 0.0
+        self.cmdVel_callback(speed)
 
 
     def cmdVel_callback(self, msg):
