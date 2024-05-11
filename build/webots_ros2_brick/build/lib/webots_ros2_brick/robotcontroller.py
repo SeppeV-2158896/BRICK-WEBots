@@ -96,16 +96,6 @@ class MyRobotDriver():
         self.laserTimer = self.node.create_timer(self.time_step,self.laser_pub)
 
 
-    """ def get_bearing_in_degrees(self):
-            north = self.imu.getValues(self)
-            rad = atan2(north[1], north[0])
-            bearing = (rad - 1.5708) / (22/7) * 180.
-            if (bearing < 0.0):
-                bearing = bearing + 360.0
-            return bearing
-
-        """
-
     def odom_callback(self):
         self.publish_odom()
 
@@ -184,25 +174,6 @@ class MyRobotDriver():
 
         # publish the message
         self.odom_pub.publish(odom)
-
-        """odom = Odometry()
-        odom.header.stamp = stamp
-        odom.header.frame_id = "odom"
-        odom.child_frame_id = "base_link"
-        # set the position 0.0
-        odom.pose.pose.position.x=0.0
-        odom.pose.pose.position.y=0.0
-        odom.pose.pose.orientation.x=0.0
-        odom.pose.pose.orientation.y=0.0
-        odom.pose.pose.orientation.z=0.0
-        odom.pose.pose.orientation.w=0.0
-        # set the velocity
-        odom.twist.twist.linear.x =0.0
-        odom.twist.twist.angular.z=0.0
-
-        # publish the message
-        self.odom_pub.publish(odom)
- """
 
 
     def cmdVel_callback(self, msg):

@@ -1,4 +1,4 @@
-const client = new Paho.MQTT.Client('2a144db8513740369fedfc9de40e179b.s1.eu.hivemq.cloud', Number(8884), "/mqtt", 'client-id:' + Math.random().toString(16).substr(2, 8));
+const client = new Paho.MQTT.Client('7cb49eb0a30146faa5a52c7adaaf47b7.s1.eu.hivemq.cloud', Number(8884), "/mqtt", 'client-id:' + Math.random().toString(16).substr(2, 8));
 
 client.onConnectionLost = onConnectionLost;
 client.onMessageArrived = onMessageArrived;
@@ -54,8 +54,8 @@ function sendGoalPos() {
         console.error('Error:', error);
         return
     }
-
-    var data = x + "-" + y;
+    console.log(x + "_" + y)
+    var data = x + "_" + y;
     sendData(data, "goal");
 }
 
@@ -72,7 +72,7 @@ function setup() {
     subscribeOnTopic("movement");
     subscribeOnTopic("emergencyStop");
     subscribeOnTopic("videostream")
-    subscribeOnTopic("goal")
+
     setEventListenersArrowButtons('forward');
     setEventListenersArrowButtons('left');
     setEventListenersArrowButtons('backward');
@@ -96,16 +96,6 @@ function setEventListenersArrowButtons(direction) {
     });
 }
 
-
-function setEventListenersGoalButton(){
-    var goalButton = document.getElementById('goal-button');
-
-    goalButton.addEventListener('click', function(){
-        var x = document.getElementById('x_coord');
-        var y = document.getElementById('y_coord');
-        sendData(x + ";" + y,'goal')
-    })
-}
 function setEventListenersEmergencyStopButton() {
     var emergencyStopButton = document.getElementById('emergency-stop');
 

@@ -1,7 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Twist
-from std_msgs.msg import Float64
+from geometry_msgs.msg import Twist, PoseStamped
 # from webots_ros2_core.webots_node import WebotsNode
 import paho.mqtt.client as mqtt
 
@@ -9,8 +8,12 @@ class mqtt_receiver(Node):
     def __init__(self):
         super().__init__('mqtt_receiver_node')
 
-        self.cmd_vel_pub = self.create_publisher(Twist,"cmd_vel",1)
+        self.cmd_vel_pub = self.create_publisher(Twist,"cmd_vel", 1)
+        self.goal_pub = self.create_publisher(PoseStamped, "goal_pose", 1)
         # self.emergency_stop_pub = self.create_publisher(bool, "emergency_stop",1)
+
+
+
 
         self.movement = {
             "forward": False,
@@ -19,7 +22,7 @@ class mqtt_receiver(Node):
             "right": False
         }
 
-        broker_address = "2a144db8513740369fedfc9de40e179b.s1.eu.hivemq.cloud"
+        broker_address = "7cb49eb0a30146faa5a52c7adaaf47b7.s1.eu.hivemq.cloud"
         port = 8883
         username = "BRICK"
         password = "FristiBRICK03"
@@ -41,12 +44,16 @@ class mqtt_receiver(Node):
         self.get_logger().info("MQTT loop started...")
         self.client.loop_start()
 
+
+
+        
+
     def on_connect(self, client, userdata, flags, rc, properties):
         self.get_logger().info("Connected to MQTT broker")
 
         self.client.subscribe("movement")
         self.client.subscribe("emergencyStop")
-
+        self.client.subscribe("goal")
         self.get_logger().info("Subscribed to topics: movement, emergencyStop")
 
     def on_connect_fail(self, client, userdata, rc):
@@ -74,6 +81,19 @@ class mqtt_receiver(Node):
             # self.emergency_stop_pub.publish(True)
             self.get_logger().info("Stop not yet implemented")
             pass
+        elif topic == "goal":
+            self.get_logger().info("gooooooooooooooooaaaaaaaaaaaaaaal")
+            data_split = data.split("_")
+            x = data_split[0]
+            y = data_split[1]
+
+            poseStamped = PoseStamped()
+            poseStamped.header.frame_id = 'map'
+            poseStamped.header.stamp = self.get_clock().now().to_msg()
+            poseStamped.pose.position.x = float(x)
+            poseStamped.pose.position.y = float(y)
+
+            self.goal_pub.publish(poseStamped)
 
     def calculateMovement(self):
         forward = self.movement["forward"]

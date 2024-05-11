@@ -12,6 +12,9 @@ class mqtt_receiver(Node):
         self.goal_pub = self.create_publisher(PoseStamped, "goal_pose", 1)
         # self.emergency_stop_pub = self.create_publisher(bool, "emergency_stop",1)
 
+
+
+
         self.movement = {
             "forward": False,
             "backward": False,
@@ -19,7 +22,7 @@ class mqtt_receiver(Node):
             "right": False
         }
 
-        broker_address = "2a144db8513740369fedfc9de40e179b.s1.eu.hivemq.cloud"
+        broker_address = "7cb49eb0a30146faa5a52c7adaaf47b7.s1.eu.hivemq.cloud"
         port = 8883
         username = "BRICK"
         password = "FristiBRICK03"
@@ -41,12 +44,16 @@ class mqtt_receiver(Node):
         self.get_logger().info("MQTT loop started...")
         self.client.loop_start()
 
+
+
+        
+
     def on_connect(self, client, userdata, flags, rc, properties):
         self.get_logger().info("Connected to MQTT broker")
 
         self.client.subscribe("movement")
         self.client.subscribe("emergencyStop")
-
+        self.client.subscribe("goal")
         self.get_logger().info("Subscribed to topics: movement, emergencyStop")
 
     def on_connect_fail(self, client, userdata, rc):
@@ -75,7 +82,8 @@ class mqtt_receiver(Node):
             self.get_logger().info("Stop not yet implemented")
             pass
         elif topic == "goal":
-            data_split = data.split("-")
+            self.get_logger().info("gooooooooooooooooaaaaaaaaaaaaaaal")
+            data_split = data.split("_")
             x = data_split[0]
             y = data_split[1]
 

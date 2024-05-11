@@ -14,7 +14,7 @@ class mqtt_videostream(Node):
         self.camera_subscriber = self.create_subscription(
             Image, '/BRICKV1/Webcam/image_color', self.camera_callback, 1)
 
-        broker_address = "2a144db8513740369fedfc9de40e179b.s1.eu.hivemq.cloud"
+        broker_address = "7cb49eb0a30146faa5a52c7adaaf47b7.s1.eu.hivemq.cloud"
         port = 8883
         username = "BRICK"
         password = "FristiBRICK03"

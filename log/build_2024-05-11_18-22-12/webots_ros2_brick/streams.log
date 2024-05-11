@@ -1,0 +1,30 @@
+[0.769s] Invoking command in '/home/ferre/brick/BRICK-WEBots/webots_ros2_brick': PYTHONPATH=/home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/prefix_override:/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/webots_ros2_brick build --build-base /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build install --record /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/install.log --single-version-externally-managed install_data
+[1.027s] running egg_info
+[1.027s] writing ../build/webots_ros2_brick/webots_ros2_brick.egg-info/PKG-INFO
+[1.027s] writing dependency_links to ../build/webots_ros2_brick/webots_ros2_brick.egg-info/dependency_links.txt
+[1.027s] writing entry points to ../build/webots_ros2_brick/webots_ros2_brick.egg-info/entry_points.txt
+[1.028s] writing requirements to ../build/webots_ros2_brick/webots_ros2_brick.egg-info/requires.txt
+[1.028s] writing top-level names to ../build/webots_ros2_brick/webots_ros2_brick.egg-info/top_level.txt
+[1.030s] reading manifest file '../build/webots_ros2_brick/webots_ros2_brick.egg-info/SOURCES.txt'
+[1.030s] adding license file 'LICENSE'
+[1.031s] writing manifest file '../build/webots_ros2_brick/webots_ros2_brick.egg-info/SOURCES.txt'
+[1.031s] running build
+[1.031s] running build_py
+[1.031s] copying webots_ros2_brick/mqtt_receiver.py -> /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build/lib/webots_ros2_brick
+[1.032s] copying webots_ros2_brick/mqtt_videostream.py -> /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build/lib/webots_ros2_brick
+[1.032s] running install
+[1.033s] running install_lib
+[1.034s] copying /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build/lib/webots_ros2_brick/mqtt_receiver.py -> /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick
+[1.034s] copying /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build/lib/webots_ros2_brick/mqtt_videostream.py -> /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick
+[1.035s] byte-compiling /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick/mqtt_receiver.py to mqtt_receiver.cpython-310.pyc
+[1.037s] byte-compiling /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick/mqtt_videostream.py to mqtt_videostream.cpython-310.pyc
+[1.037s] running install_data
+[1.038s] running install_egg_info
+[1.040s] removing '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick-0.0.0-py3.10.egg-info' (and everything under it)
+[1.041s] Copying ../build/webots_ros2_brick/webots_ros2_brick.egg-info to /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick-0.0.0-py3.10.egg-info
+[1.043s] running install_scripts
+[1.064s] Installing mqtt_handler script to /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/webots_ros2_brick
+[1.064s] Installing mqtt_videostream script to /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/webots_ros2_brick
+[1.064s] Installing navigator script to /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/webots_ros2_brick
+[1.064s] writing list of installed files to '/home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/install.log'
+[1.101s] Invoked command in '/home/ferre/brick/BRICK-WEBots/webots_ros2_brick' returned '0': PYTHONPATH=/home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/prefix_override:/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/webots_ros2_brick build --build-base /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build install --record /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/install.log --single-version-externally-managed install_data
