@@ -63,7 +63,7 @@ class navigation(Node):
         self.path_sub = self.create_subscription(Path, '/plan', self.path_callback, 1)
         self.odom_sub = self.create_subscription(Odometry, '/odom', self.odom_callback, 1)
         self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
-        self.emergency_stop = self.node.create_subscription(
+        self.emergency_stop = self.create_subscription(
             Bool, '/emergency_stop', self.emergencyStop_callback, 1)
         
     def path_callback(self, path_msg):
@@ -161,7 +161,7 @@ class navigation(Node):
         speed = Twist()
         speed.linear.x = 0.0
         speed.angular.z = 0.0
-        self.cmdVel_callback(speed)
+        self.cmd_vel_pub.publish(speed)
 
         self.path_queue = []
 

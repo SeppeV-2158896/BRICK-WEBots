@@ -1,0 +1,36 @@
+[0.918s] Invoking command in '/home/ferre/brick/BRICK-WEBots/webots_ros2_brick': PYTHONPATH=/home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/prefix_override:/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/webots_ros2_brick build --build-base /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build install --record /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/install.log --single-version-externally-managed install_data
+[1.201s] running egg_info
+[1.201s] writing ../build/webots_ros2_brick/webots_ros2_brick.egg-info/PKG-INFO
+[1.202s] writing dependency_links to ../build/webots_ros2_brick/webots_ros2_brick.egg-info/dependency_links.txt
+[1.202s] writing entry points to ../build/webots_ros2_brick/webots_ros2_brick.egg-info/entry_points.txt
+[1.202s] writing requirements to ../build/webots_ros2_brick/webots_ros2_brick.egg-info/requires.txt
+[1.202s] writing top-level names to ../build/webots_ros2_brick/webots_ros2_brick.egg-info/top_level.txt
+[1.205s] reading manifest file '../build/webots_ros2_brick/webots_ros2_brick.egg-info/SOURCES.txt'
+[1.208s] adding license file 'LICENSE'
+[1.209s] writing manifest file '../build/webots_ros2_brick/webots_ros2_brick.egg-info/SOURCES.txt'
+[1.209s] running build
+[1.209s] running build_py
+[1.209s] copying webots_ros2_brick/navigation.py -> /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build/lib/webots_ros2_brick
+[1.209s] copying webots_ros2_brick/mqtt_receiver.py -> /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build/lib/webots_ros2_brick
+[1.210s] copying webots_ros2_brick/robotcontroller.py -> /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build/lib/webots_ros2_brick
+[1.210s] copying webots_ros2_brick/mqtt_videostream.py -> /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build/lib/webots_ros2_brick
+[1.210s] running install
+[1.211s] running install_lib
+[1.212s] copying /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build/lib/webots_ros2_brick/navigation.py -> /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick
+[1.212s] copying /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build/lib/webots_ros2_brick/mqtt_receiver.py -> /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick
+[1.212s] copying /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build/lib/webots_ros2_brick/robotcontroller.py -> /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick
+[1.213s] copying /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build/lib/webots_ros2_brick/mqtt_videostream.py -> /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick
+[1.214s] byte-compiling /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick/navigation.py to navigation.cpython-310.pyc
+[1.215s] byte-compiling /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick/mqtt_receiver.py to mqtt_receiver.cpython-310.pyc
+[1.216s] byte-compiling /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick/robotcontroller.py to robotcontroller.cpython-310.pyc
+[1.218s] byte-compiling /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick/mqtt_videostream.py to mqtt_videostream.cpython-310.pyc
+[1.219s] running install_data
+[1.220s] running install_egg_info
+[1.222s] removing '/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick-0.0.0-py3.10.egg-info' (and everything under it)
+[1.223s] Copying ../build/webots_ros2_brick/webots_ros2_brick.egg-info to /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages/webots_ros2_brick-0.0.0-py3.10.egg-info
+[1.224s] running install_scripts
+[1.249s] Installing mqtt_handler script to /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/webots_ros2_brick
+[1.249s] Installing mqtt_videostream script to /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/webots_ros2_brick
+[1.249s] Installing navigator script to /home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/webots_ros2_brick
+[1.249s] writing list of installed files to '/home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/install.log'
+[1.287s] Invoked command in '/home/ferre/brick/BRICK-WEBots/webots_ros2_brick' returned '0': PYTHONPATH=/home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/prefix_override:/home/ferre/brick/BRICK-WEBots/install/webots_ros2_brick/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/webots_ros2_brick build --build-base /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/build install --record /home/ferre/brick/BRICK-WEBots/build/webots_ros2_brick/install.log --single-version-externally-managed install_data

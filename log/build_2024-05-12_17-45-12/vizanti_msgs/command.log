@@ -1,0 +1,4 @@
+Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs': /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs -- -j12 -l12
+Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs' returned '0': /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs -- -j12 -l12
+Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs': /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs
+Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs' returned '0': /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs

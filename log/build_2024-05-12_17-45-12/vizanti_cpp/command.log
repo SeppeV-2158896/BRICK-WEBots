@@ -1,0 +1,4 @@
+Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_cpp': /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_cpp -- -j12 -l12
+Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_cpp' returned '0': /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_cpp -- -j12 -l12
+Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_cpp': /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_cpp
+Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_cpp' returned '0': /usr/bin/cmake --install /home/ferre/brick/BRICK-WEBots/build/vizanti_cpp

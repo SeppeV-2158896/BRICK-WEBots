@@ -77,20 +77,9 @@ class mqtt_receiver(Node):
             twist = self.calculateMovement()
             self.cmd_vel_pub.publish(twist)
         elif topic == "emergencyStop":
-
-            poseStamped = PoseStamped()
-            poseStamped.header.frame_id = 'map'
-            poseStamped.header.stamp = self.get_clock().now().to_msg()
-            poseStamped.pose.position.x = float(50)
-            poseStamped.pose.position.y = float(50)
-            self.goal_pub.publish(poseStamped)      
-
             boolv = Bool()
             boolv.data = True
             self.emergency_stop_pub.publish(boolv)
-
-
-            self.goal_pub.publish(poseStamped)
         elif topic == "goal":
             self.get_logger().info("gooooooooooooooooaaaaaaaaaaaaaaal")
             data_split = data.split("_")

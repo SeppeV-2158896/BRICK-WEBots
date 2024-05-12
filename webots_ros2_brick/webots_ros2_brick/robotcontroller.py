@@ -37,6 +37,7 @@ class MyRobotDriver():
         self.camera =self.robot.getDevice("Webcam")
         self.camera.enable(self.service_node_vel_timestep)
         
+
         # Front wheels
         self.left_motor = self.robot.getDevice('left_motor')
         self.left_motor.setPosition(float('inf'))
@@ -45,6 +46,8 @@ class MyRobotDriver():
         self.right_motor= self.robot.getDevice('right_motor')
         self.right_motor.setPosition(float('inf'))
         self.right_motor.setVelocity(0)
+        
+
         
         # position sensors 
         self.left_wheel_sensor = self.robot.getDevice('pos_left')
@@ -65,7 +68,7 @@ class MyRobotDriver():
         self.lidar_sensor.enablePointCloud()
         
 
-
+        self.goal_pub = self.node.create_publisher(PoseStamped, "goal_pose", 1)
         
 
         ##########################
@@ -95,6 +98,25 @@ class MyRobotDriver():
 
         self.laser_publisher = self.node.create_publisher(LaserScan, '/scan', 1)
         self.laserTimer = self.node.create_timer(self.time_step,self.laser_pub)
+
+        # bumper sensors
+        self.front_touch_sensor = self.robot.getDevice('front_touch')
+        self.front_touch_sensor.enable(self.service_node_vel_timestep)
+        self.rear_touch_sensor = self.robot.getDevice('back_touch')
+        self.rear_touch_sensor.enable(self.service_node_vel_timestep)
+        self.bumperTimer = self.node.create_timer(self.time_step,self.bumper_check)
+
+
+
+    def bumper_check(self):
+        value1 = self.rear_touch_sensor.getValue()
+        value2 = self.front_touch_sensor.getValue()
+        self.node.get_logger().info(str(value1) + "    " + str(value2))
+        if (value1 == 1 or value2 == 1):
+            boolv = Bool()
+            boolv.data = True
+            self.emergencyStop_callback(boolv)
+
 
 
     def odom_callback(self):
@@ -177,6 +199,14 @@ class MyRobotDriver():
         self.odom_pub.publish(odom)
 
     def emergencyStop_callback(self, msg):
+        poseStamped = PoseStamped()
+        poseStamped.header.frame_id = 'map'
+        poseStamped.header.stamp = self.node.get_clock().now().to_msg()
+        poseStamped.pose.position.x = float(self.x)
+        poseStamped.pose.position.y = float(self.y)
+        self.goal_pub.publish(poseStamped)      
+        
+
         speed = Twist()
         speed.linear.x = 0.0
         speed.angular.z = 0.0
