@@ -363,14 +363,14 @@ PROTO BRICK [
                       name             "appearance"   # any string
                     }
                     geometry Box { 
-                      size  0.02 0.7 0.1
+                      size  0.02 0.7 0.05
                     }
                     castShadows TRUE
                     isPickable TRUE
                   }
                 ]
                 boundingObject Box {
-                  size  0.02 0.7 0.1
+                  size  0.02 0.7 0.01
                 }
                 physics Physics {
                   density -1
@@ -409,14 +409,14 @@ PROTO BRICK [
                       name             "appearance"   # any string
                     }
                     geometry Box {
-                      size 0.02 0.7 0.1
+                      size 0.02 0.7 0.05
                     }
                     castShadows TRUE
                     isPickable TRUE
                   }
                 ]
                 boundingObject Box {
-                  size 0.02 0.7 0.1
+                  size 0.02 0.7 0.01
                 }
                 physics Physics {
                   density -1

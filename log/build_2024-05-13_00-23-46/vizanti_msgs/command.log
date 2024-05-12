@@ -1,0 +1,2 @@
+Invoking command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs': /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs -- -j12 -l12
+Invoked command in '/home/ferre/brick/BRICK-WEBots/build/vizanti_msgs' returned '2': /usr/bin/cmake --build /home/ferre/brick/BRICK-WEBots/build/vizanti_msgs -- -j12 -l12

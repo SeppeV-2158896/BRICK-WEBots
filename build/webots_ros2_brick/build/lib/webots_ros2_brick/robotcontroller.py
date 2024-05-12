@@ -83,7 +83,7 @@ class MyRobotDriver():
         self.right_omega = 0.0
         self.left_target_v = 0
         self.right_target_V = 0
-        
+        self.stopped = False
         #########################
         
         self.prev_angle = 0
@@ -111,11 +111,18 @@ class MyRobotDriver():
     def bumper_check(self):
         value1 = self.rear_touch_sensor.getValue()
         value2 = self.front_touch_sensor.getValue()
+        tw = Twist()
+        if value1 == 1:
+            tw.linear.x = float(10)
+        if value2 == 1:
+            tw.linear.x = float(-10)
+        self.cmdVel_callback(tw)
         self.node.get_logger().info(str(value1) + "    " + str(value2))
         if (value1 == 1 or value2 == 1):
             boolv = Bool()
             boolv.data = True
-            self.emergencyStop_callback(boolv)
+            if not self.stopped:
+                self.emergencyStop_callback(boolv)
 
 
 
@@ -199,25 +206,34 @@ class MyRobotDriver():
         self.odom_pub.publish(odom)
 
     def emergencyStop_callback(self, msg):
+
+        self.stopped = not self.stopped
+
+        if (self.stopped):
+            self.motor_max_speed = 0.0
+        else :
+            self.motor_max_speed = self.left_motor.getMaxVelocity()
+        
+
+        self.node.get_logger().info("speed" + str(self.motor_max_speed) + "   " + str(self.stopped))
+        speed = Twist()
+        speed.linear.x = 0.0
+        speed.angular.z = 0.0
+        self.cmdVel_callback(speed)
+
         poseStamped = PoseStamped()
         poseStamped.header.frame_id = 'map'
         poseStamped.header.stamp = self.node.get_clock().now().to_msg()
         poseStamped.pose.position.x = float(self.x)
         poseStamped.pose.position.y = float(self.y)
         self.goal_pub.publish(poseStamped)      
-        
-
-        speed = Twist()
-        speed.linear.x = 0.0
-        speed.angular.z = 0.0
-        self.cmdVel_callback(speed)
 
 
     def cmdVel_callback(self, msg):
         
         self.vx = msg.linear.x
         self.vth = msg.angular.z
-        self.node.get_logger().info(str(self.vx) + "  " + str(self.vth))
+        #self.node.get_logger().info(str(self.vx) + "  " + str(self.vth))
         #msg.angular.z = - msg.angular.z 
         #self.node.get_logger().info("speeds"  + str(msg.linear.x) + " " + str(msg.angular.z))
         left_speed = msg.linear.x - (2* msg.angular.z)/self.wheel_gap
